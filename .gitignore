@@ -1,26 +1,26 @@
 builder/node_modules
 
-json-site/logs
-json-site/*.log
-json-site/npm-debug.log*
-json-site/yarn-debug.log*
-json-site/yarn-error.log*
-json-site/pnpm-debug.log*
-json-site/lerna-debug.log*
+json-website/logs
+json-website/*.log
+json-website/npm-debug.log*
+json-website/yarn-debug.log*
+json-website/yarn-error.log*
+json-website/pnpm-debug.log*
+json-website/lerna-debug.log*
 
-json-site/node_modules
-json-site/dist
-json-site/dist-ssr
-json-site/*.local
+json-website/node_modules
+json-website/dist
+json-website/dist-ssr
+json-website/*.local
 
-json-site/.vscode/*
-!json-site/.vscode/extensions.json
-json-site/.idea
-json-site/.DS_Store
-json-site/*.suo
-json-site/*.ntvs*
-json-site/*.njsproj
-json-site/*.sln
-json-site/*.sw?
+json-website/.vscode/*
+!json-website/.vscode/extensions.json
+json-website/.idea
+json-website/.DS_Store
+json-website/*.suo
+json-website/*.ntvs*
+json-website/*.njsproj
+json-website/*.sln
+json-website/*.sw?
 
 test-backend/node_modules

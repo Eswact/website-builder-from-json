@@ -19,7 +19,7 @@ async function generateSite() {
     createViews(),
   ]);
 
-  require('child_process').execSync(`cd ../json-site && pnpm run dev`, { stdio: 'inherit' });
+  require('child_process').execSync(`cd ../json-website && pnpm run dev`, { stdio: 'inherit' });
 }
 
 generateSite();

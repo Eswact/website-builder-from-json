@@ -1,0 +1,33 @@
+{
+  "name": "json-website",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "datatables.net": "^2.1.8",
+    "datatables.net-colreorder": "^2.0.4",
+    "datatables.net-dt": "^2.1.8",
+    "datatables.net-keytable": "^2.12.1",
+    "jquery": "^3.7.1",
+    "pinia": "^2.3.0",
+    "select2": "^4.1.0-rc.0",
+    "sortablejs": "^1.15.6",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.3",
+    "vue-router": "^4.5.0",
+    "vue3-toastify": "^0.2.8",
+    "@vueuse/core": "^13.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.6.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^4.5.13"
+  }
+}

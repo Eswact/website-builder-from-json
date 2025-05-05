@@ -1,0 +1,213 @@
+{
+  "defaults": {
+    "visibility": "Görünürlük",
+    "visibilityHeader": "Tabloyu Özelleştir",
+    "visibilityDesc": "Liste içindeki öğeleri yeniden sıralamak için sürükleyip bırakın. Sütun görünürlüğü için onay kutularını kullanın.",
+    "filters": "Filtreler",
+    "sort": "Sırala",
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "page": "Sayfa",
+    "search": "Ara...",
+    "apply": "Uygula",
+    "reset": "Sıfırla",
+    "all": "Hepsi",
+    "noDataFound": "Veri Bulunamadı.",
+    "addToBasket": "Sepete Ekle",
+    "soldOut": "Tükendi",
+    "basket": "Sepet",
+    "clear": "Temizle",
+    "total": "Toplam",
+    "selectOption": "Bir seçenek seçin",
+    "areYouSure": "Emin misiniz?",
+    "ok": "Tamam",
+    "cancel": "İptal",
+    "datatableRemoveRowMessage": "Seçtiğiniz satır tablodan kaldırılacak",
+    "cardClearBasketMessage": "Sepeti temizlemek istediğinize emin misiniz?",
+    "pageNotFound": "Sayfa bulunamadı",
+    "pageNotFoundDesc": "Aradığınız sayfa mevcut değil. İşte bazı yardımcı bağlantılar:",
+    "goBack": "Geri Dön",
+    "takeMeHome": "Ana Sayfaya Dön",
+    "save": "Kaydet",
+    "add": "Ekle",
+    "datatable": {
+      "info": "_TOTAL_ kayıttan _START_ - _END_ kayıt gösteriliyor.",
+      "infoEmpty": "Gösterilecek hiç kayıt yok.",
+      "loadingRecords": "Kayıtlar yükleniyor.",
+      "lengthMenu": "Sayfada _MENU_ kayıt göster",
+      "zeroRecords": "Tablo Boş.",
+      "infoFiltered": "(toplam _MAX_ kayıttan filtrelenenler)"
+    }
+  },
+  "introduction": "Anasayfa",
+  "configuration": "Yapılandırma",
+  "examples": "Örnekler",
+  "datatables": "Tablolar",
+  "cards": "Kartlar",
+  "thisPage": "Bu Sayfa",
+  "aToZ": "A'dan Z'ye",
+  "lowestPrice": "En Düşük Fiyat",
+  "highestPrice": "En Yüksek Fiyat",
+  "introductionPage": {
+    "seo": {
+      "description": "Tanıtım",
+      "keyword1": "tanıtım",
+      "keyword2": "anasayfa",
+      "keyword3": "ana"
+    },
+    "title1": "JSON Tabanlı Dinamik CRM Üretici",
+    "desc1": "Projenin amacı, bir JSON dosyası ve yerel kaynaklar kullanarak web sitesi geliştirme sürecini basitleştirmektir. Bu, önceden tanımlanmış yapılandırmaları kullanarak Vue 3 ve Tailwind CSS tabanlı bir web sitesinin dinamik olarak oluşturulmasını sağlar ve web sitelerinin oluşturulmasını, özelleştirilmesini ve bakımını kolaylaştırır.",
+    "title2": "JSON Yapılandırması",
+    "desc2": "JSON dosyası, projenin temelini oluşturur ve aşağıdaki ana bileşenleri içerir:",
+    "desc3-1": "Genel Bilgiler:",
+    "desc3-2": "Web sitesinin adı ve logosunun yanı sıra, başlık, açıklama ve simge gibi meta veri ayrıntılarını da içerir.",
+    "desc4-1": "Temalar:",
+    "desc4-2": "Renk şemaları, karanlık mod etkinleştirme ve yazı tipi yapılandırmaları gibi görsel öğelerin ayarlarını belirtir. Bu ayarlar, web sitesinin genel estetiğini tanımlar.",
+    "desc5-1": "Sayfalar:",
+    "desc5-2": "Her sayfa, JSON yapısı içinde tanımlanır ve sayfanın düzenini ve kullanılan bileşenleri detaylandırır. Sayfalar ayrıca DataTable, customType gibi geliştirmeyi kolaylaştırmak için çeşitli içerik türlerini içerir.",
+    "desc6": "İçerik türleri, sayfa tanımlarının içine doğrudan entegre edilmiştir ve projenin gereksinimlerine uygun dinamik DOM yapılarının oluşturulmasını kolaylaştırır. Bu yaklaşım, JSON dosyasının hem genel hem de sayfaya özgü yapılandırmaları verimli bir şekilde ele almasını sağlar.",
+    "button": "Başlarken"
+  },
+  "configurationPage": {
+    "seo": {
+      "title": "Başlarken - My CRM",
+      "description": "Başlarken",
+      "keyword1": "başlarken",
+      "keyword2": "seçenekler",
+      "keyword3": "ayarlar"
+    },
+    "title1": "Başlarken",
+    "subtitle1": "Bağımlılıkları Yükle",
+    "desc1": "Terminalinizi açın ve aşağıdaki komutu generator klasöründe çalıştırın:",
+    "subtitle2": "data.js'yi Düzenle",
+    "desc2": "generator klasörüne gidin, data.js'yi açın ve gerekli ayarlamaları yapın.",
+    "subtitle3": "JSON Dosyalarını Oluştur",
+    "desc3": "generator klasöründe aşağıdaki komutu çalıştırın:",
+    "title2": "Yapılandırma",
+    "subtitle4": "Genel",
+    "desc4": "Bu bölüm, sitenin temel bilgilerini içerir. Logo, site adı, simge, sayfa başlığı ve SEO bilgileri gibi görsel öğeler burada tanımlanır.",
+    "subtitle5": "Tema",
+    "desc5": "Tema ayarları, sitenin tasarımını kontrol eder. Bu, karanlık mod, renkler ve yazı tipleri gibi özellikleri içerir. Ayrıca, özel renkleri ve projenin logosunu ve simgesini belirtmenizi sağlar. Ayrıca, bu bölümde projeye özel yazı tipleri ve resimler ekleyebilirsiniz.",
+    "subtitle6": "Sayfalar",
+    "desc6": "Bu bölümde, sitenin sayfaları tanımlanır. SEO hakkında bilgi, sayfaya özgü içerik ve her sayfada kullanılan bileşenler sağlanır. İki ana sayfa türü vardır:",
+    "desc7-1": "Datatable:",
+    "desc7-2": "AJAX çağrısı aracılığıyla dinamik olarak doldurulabilen bir veri tablosunu içeren bir sayfa. Bu, büyük miktarda veriyi filtreleme, arama ve sayfalama yeteneği ile yapılandırılmış bir formatta görüntülemek için kullanışlıdır.",
+    "desc8-1": "Custom:",
+    "desc8-2": "Daha özelleştirilmiş içeriğe izin veren bir sayfa. İçerik, JSON dosyasında doğrudan belirtilir ve özel HTML veya Vue bileşenlerini içerebilir.",
+    "subtitle7": "Özel Scriptler",
+    "desc9": "Paylaşılabilir işlevler ve scriptler burada bulunur.",
+    "button": "Örnekler"
+  },
+  "examplesPage": {
+    "seo": {
+      "title": "Örnekler - My CRM",
+      "description": "Örnekleri inceleyin.",
+      "keyword1": "örnek",
+      "keyword2": "demo",
+      "keyword3": "dene"
+    },
+    "title1": "Veri Tablosu Örneği",
+    "title2": "Kart Örneği",
+    "exampleTable": {
+      "group": "Grup",
+      "name": "İsim",
+      "mail": "Mail",
+      "message": "Mesaj"
+    },
+    "exampleCard": {
+      "searchPlaceholder": "Ürünleri ara..."
+    },
+    "exampleSplash": {
+      "title": "Örnek Splash",
+      "description": "Bu bir örnek splash ekranıdır. Bu splash 3 saniye içinde otomatik olarak kapanacaktır.",
+      "button": "Şimdi Kapat"
+    },
+    "helper": {
+      "page": "Örnekler Sayfası",
+      "info": "Bu sayfada örneklerin bir listesini görebilirsiniz. Örnek Dom türleri: DataTable, cards ve custom. Bu sayfanın json'unu görmek istiyorsanız sayfanın altındaki 'bu sayfa' butonuna tıklayabilirsiniz.",
+      "shortcuts": [
+        "Örnek kısayol açıklaması.",
+        "İptal etmek için kullanılır.",
+        "Örnek kısayol açıklaması."
+      ]
+    }
+  },
+  "datatablesPage": {
+    "seo": {
+      "title": "Veritabloları - My CRM",
+      "description": "Veritablolarının örneklerini inceleyin.",
+      "keywords1": "veritablo",
+      "keywords2": "örnek",
+      "keywords3": "tablo"
+    },
+    "title1": "Filtreli Veri Tablosu",
+    "title2": "Düzenlebilir Veri Tablosu",
+    "title3": "Çoklu Seçim Veri Tablosu",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "table1": {
+      "plate": "Plaka",
+      "model": "Model",
+      "customer": "Müşteri",
+      "location": "Konum",
+      "date": "Tarih"
+    },
+    "table2": {
+      "plate": "Plaka",
+      "model": "Model",
+      "androidImei": "Android Imei",
+      "androidMac": "Andorid Mac",
+      "modemImei": "Modem Imei",
+      "modemMac": "Modem Mac",
+      "plcImei": "PLC Imei",
+      "plcMac": "PLC Mac",
+      "test": "Test",
+      "contextMenu": {
+        "edit": "Düzenle",
+        "delete": "Sil",
+        "test": "Test"
+      },
+      "add": "Otomat Ekle",
+      "edit": "Otomat Düzenle"
+    },
+    "table3": {
+      "plate": "Plaka",
+      "model": "Model",
+      "androidImei": "Android Imei",
+      "androidMac": "Andorid Mac",
+      "modemImei": "Modem Imei",
+      "modemMac": "Modem Mac",
+      "plcImei": "PLC Imei",
+      "plcMac": "PLC Mac",
+      "test": "Test",
+      "contextMenu": {
+        "edit": "Düzenle",
+        "delete": "Sil",
+        "test": "Test"
+      },
+      "add": "Otomat Ekle",
+      "edit": "Otomat Düzenle"
+    }
+  },
+  "cardsPage": {
+    "seo": {
+      "title": "Kartlar - My CRM",
+      "description": "Kartların örneklerini inceleyin.",
+      "keywords1": "kart",
+      "keywords3": "alışveriş",
+      "keywords4": "sepet"
+    },
+    "card1": {
+      "searchPlaceholder": "Ürünleri ara...",
+      "category": "Kategori",
+      "brand": "Marka",
+      "categorySelection": "Kategori Seçiniz"
+    },
+    "card2": {
+      "searchPlaceholder": "Arama yapın...",
+      "category": "Kategori",
+      "brand": "Marka",
+      "categorySelection": "Kategori Seçiniz"
+    }
+  }
+}

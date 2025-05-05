@@ -1,0 +1,68 @@
+{
+    "string": {
+        "type": "string",
+        "name": "exampleName",
+        "title": "exampleTitle",
+        "required": true,
+        "value": "",
+        "placeholder": "xxx-xx-xxx",
+        "errorChecks": [
+            {
+                "control": "return value != null && value != '' && value.length > 4;",
+                "errMessage": "Plate must be longer than 4 characters."
+            }
+        ],
+        "keydown": {
+            "maxLength": 14,
+            "bannedKeys": ["68-90", 32] 
+        },
+        "visible": true
+    },
+    "number": {
+        "type": "number",
+        "name": "exampleName",
+        "title": "exampleTitle",
+        "required": true,
+        "value": "",
+        "placeholder": "xxx-xx-xxx",
+        "errorChecks": [
+            {
+                "control": "return value != null && value != '' && value.length > 4;",
+                "errMessage": "Plate must be longer than 4 characters."
+            }
+        ],
+        "keydown": {
+            "maxLength": 14,
+            "bannedKeys": ["68-90", 32] 
+        },
+        "visible": true
+    },
+    "select": {
+        "type": "select",
+        "name": "exampleName",
+        "title": "exampleTitle",
+        "required": true,
+        "options": [
+            {
+                "value": 0,
+                "label": "Choose an option"
+            },
+            {
+                "value": 1,
+                "label": "exampleOption1"
+            },
+            {
+                "value": 2,
+                "label": "exampleOption2"
+            }
+        ],
+        "showAllErrors": false,
+        "errorChecks": [
+            {
+                "control": "return value != null && value != ''",
+                "errMessage": "example error message"
+            }
+        ],
+        "visible": true
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "json-website-builder",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node builder.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

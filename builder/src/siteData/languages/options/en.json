@@ -1,0 +1,215 @@
+{
+    "defaults": {
+        "visibility": "Visibility",
+        "visibilityHeader": "Customize Table",
+        "visibilityDesc": "Drag and drop the items in the list to reorder them. Use checkboxes for column visibility.",
+        "filters": "Filters",
+        "sort": "Sort",
+        "next": "Next",
+        "previous": "Previous",
+        "page": "Page",
+        "search": "Search...",
+        "apply": "Apply",
+        "reset": "Reset",
+        "all": "All",
+        "noDataFound": "No data found.",
+        "addToBasket": "Add to basket",
+        "soldOut": "Sold out",
+        "basket": "Basket",
+        "clear": "Clear",
+        "total": "Total",
+        "selectOption": "Select an option",
+        "areYouSure": "Are you sure?",
+        "ok": "OK",
+        "cancel": "Cancel",
+        "datatableRemoveRowMessage": "The row you selected will be removed from the table",
+        "cardClearBasketMessage": "Are you sure you want to clear the basket?",
+        "pageNotFound": "Page not found",
+        "pageNotFoundDesc": "The page you are looking for does not exist. Here are some helpful links:",
+        "goBack": "Go back",
+        "takeMeHome": "Take me home",
+        "save": "Save",
+        "add": "Add",
+        "datatable": {
+            "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+            "infoEmpty": "No data available in table",
+            "loadingRecords": "Loading...",
+            "lengthMenu": "Show _MENU_ entries",
+            "zeroRecords": "Table Empty.",
+            "infoFiltered": "(filtered from _MAX_ total entries)"
+        }
+    },
+
+    "introduction": "Introduction",
+    "configuration": "Configuration",
+    "examples": "Examples",
+    "datatables": "Datatables",
+    "cards": "Cards",
+    "thisPage": "This Page",
+    "aToZ": "A to Z",
+    "lowestPrice": "Lowest Price",
+    "highestPrice": "Highest Price",
+    "introductionPage": {
+        "seo": {
+            "description": "Introduction",
+            "keyword1": "introduction",
+            "keyword2": "home",
+            "keyword3": "main"
+        },
+        "title1": "JSON-Based Dynamic CRM Generator",
+        "desc1": "The project's goal is to simplify the process of website development, particularly for CRM systems, by utilizing a JSON file and local resources. It enables dynamic generation of a Vue 3 and Tailwind CSS-based website using predefined configurations in the JSON file, making it easier to create, customize, and maintain websites.",
+        "title2": "JSON Configuration",
+        "desc2": "The JSON file forms the foundation of the project and includes the following key components:",
+        "desc3-1": "General Information:",
+        "desc3-2": "In addition to the website's name and logo, it also includes metadata details such as the title, description, and icon.",
+        "desc4-1": "Themes:",
+        "desc4-2": "Specifies settings for visual elements such as color schemes, dark mode enablement, and font configurations. These settings define the overall aesthetic of the website.",
+        "desc5-1": "Pages:",
+        "desc5-2": "Each page is defined within the JSON structure, detailing its layout and the components used. Pages also include a variety of content types to streamline development like DataTable, customType",
+        "desc6": "The content types are integrated directly within the page definitions, making it easier to construct dynamic DOM structures that align with the project's requirements. This approach ensures that the JSON file can handle both general and page-specific configurations efficiently.",
+        "button": "Getting Started"
+    },
+    "configurationPage": {
+        "seo": {
+            "title": "Configuration - My CRM",
+            "description": "Configuration",
+            "keyword1": "configuration",
+            "keyword2": "options",
+            "keyword3": "settings"
+        },
+        "title1": "Getting Started",
+        "subtitle1": "Install Dependencies",
+        "desc1": "Open your terminal and run the following command in the generator folder:",
+        "subtitle2": "Edit data.js in the generator Folder",
+        "desc2": "Navigate to the generator folder, open data.js, and make the necessary adjustments to the data.",
+        "subtitle3": "Generate JSON Files",
+        "desc3": "Run the following command in the generator folder:",
+        "title2": "Configuration",
+        "subtitle4": "General",
+        "desc4": "This section contains basic information about the site. Visual elements such as logo, site name, icon, page title and SEO information are defined here.",
+        "subtitle5": "Theme",
+        "desc5": "Theme settings control the site design. This includes features like dark mode, colors, and fonts. You can also specify custom colors and the project’s logo and icon. Additionally, this section allows you to include fonts and images in the project directory.",
+        "subtitle6": "Pages",
+        "desc6": "In this section, the pages of the site are defined. Information about SEO, page-specific content, and the components used in each page are provided. There are two main types of pages:",
+        "desc7-1": "Datatable:",
+        "desc7-2": "A page that includes a table of data that can be dynamically populated through an AJAX call. This is useful for displaying large amounts of data in a structured format with the ability to filter, search, and paginate.",
+        "desc8-1": "Custom:",
+        "desc8-2": "A page that allows for more customized content. The content is specified directly in the JSON file and can include custom HTML or Vue components.",
+        "subtitle7": "Custom Scripts",
+        "desc9": "Shareable functions and scripts are located here.",
+        "button": "Examples"
+    },
+    "examplesPage": {
+        "seo": {
+            "title": "Examples - My CRM",
+            "description": "Overview of Examples",
+            "keyword1": "example",
+            "keyword2": "demo",
+            "keyword3": "try"
+        },
+        "title1": "Datatable Example",
+        "title2": "Card Example",
+        "exampleTable": {
+            "group": "Group",
+            "name": "Name",
+            "mail": "Mail",
+            "message": "Message"
+        },
+        "exampleCard": {
+            "searchPlaceholder": "Search products..."
+        },
+        "exampleSplash": {
+            "title": "Example Splash",
+            "description": "This is an example splash screen. This splash close automatically in 3 seconds.",
+            "button": "Close Now"
+        },
+        "helper": {
+            "page": "Examples Page",
+            "info": "In this page, you can see a list of examples. Example Dom types are: DataTable, cards and custom. If you want to see this page's json you can click the 'this page' button at the bottom of the page.",
+            "shortcuts": [
+                "Example shortcut description.",
+                "For the cancel.",
+                "Example shortcut description."
+            ]
+        }
+    },
+    "datatablesPage": {
+        "seo": {
+            "title": "Datatables - My CRM",
+            "description": "In this page you can see datatable examples.",
+            "keywords1": "datatable",
+            "keywords2": "example",
+            "keywords3": "table"
+        },
+        "title1": "Datatable with filters",
+        "title2": "Editable datatable",
+        "title3": "Multiselect datatable",
+        "save": "Save",
+        "cancel": "Cancel",
+        "table1": {
+            "plate": "Plate",
+            "model": "Model",
+            "customer": "Customer",
+            "location": "Location",
+            "date": "Date"
+        },
+        "table2": {
+            "plate": "Plate",
+            "model": "Model",
+            "androidImei": "Android Imei",
+            "androidMac": "Andorid Mac",
+            "modemImei": "Modem Imei",
+            "modemMac": "Modem Mac",
+            "plcImei": "PLC Imei",
+            "plcMac": "PLC Mac",
+            "test": "Test",
+            "contextMenu": {
+                "edit": "Edit",
+                "delete": "Delete",
+                "test": "Test"
+            },
+            "add": "Add Automat",
+            "edit": "Edit Automat"
+        },
+        "table3": {
+            "plate": "Plate",
+            "model": "Model",
+            "androidImei": "Android Imei",
+            "androidMac": "Andorid Mac",
+            "modemImei": "Modem Imei",
+            "modemMac": "Modem Mac",
+            "plcImei": "PLC Imei",
+            "plcMac": "PLC Mac",
+            "test": "Test",
+            "contextMenu": {
+                "edit": "Edit",
+                "delete": "Delete",
+                "test": "Test"
+            },
+            "add": "Add Automat",
+            "edit": "Edit Automat"
+        }
+    },
+    "cardsPage": {
+        "seo": {
+            "title": "Cards - My CRM",
+            "description": "In this page you can see shopping card examples.",
+            "keywords1": "cards",
+            "keywords1": "card",
+            "keywords3": "shopping",
+            "keywords4": "basket"
+        },
+        "card1": {
+            "searchPlaceholder": "Search products...",
+            "category": "Category",
+            "brand": "Brand",
+            "categorySelection": "Select Category"
+        },
+        "card2": {
+            "searchPlaceholder": "Search...",
+            "category": "Category",
+            "brand": "Brand",
+            "categorySelection": "Select Category"
+        }
+    }
+}

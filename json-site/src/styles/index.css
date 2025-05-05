@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+      @apply font-base text-base;
+    }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bg rounded-sm;
+  }
+  .dark ::-webkit-scrollbar-track {
+    @apply bg-darkBg rounded-sm;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-darkBg rounded-sm;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-bg rounded-sm;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-main;
+  }
+  #sharedModalBg *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  #sharedModalBg *::-webkit-scrollbar-track {
+    @apply bg-bg rounded-sm;
+  }
+  #sharedModalBg *::-webkit-scrollbar-thumb {
+    @apply bg-darkBg rounded-sm;
+  }
+}
+
+/* datatable start */
+table.dataTable thead {
+  @apply bg-second;
+}
+table.dataTable thead tr {
+  @apply bg-second text-white h-[60px] rounded-md;
+}
+div.dt-scroll {
+  @apply border-2 border-second overflow-hidden;
+  border-radius: 0.55rem 0.55rem 0 0;
+}
+div.dt-container .dt-paging .dt-paging-button {
+  @apply bg-second text-white text-[1rem] border border-second rounded-md font-bold;
+}
+div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover {
+  @apply bg-main text-white border-main cursor-default;
+}
+div.dt-container .dt-paging .dt-paging-button:hover {
+  @apply bg-[#191919] text-white cursor-default;
+}
+table.dataTable tbody th.focus,table.dataTable tbody td.focus {
+  @apply outline-third outline-offset-[-2px] !important;
+  outline: 2px solid;
+}
+div.dtk-focus-alt table.dataTable tbody th.focus,div.dtk-focus-alt table.dataTable tbody td.focus {
+  @apply outline-main outline-offset-[-2px] !important;
+  outline: 2px solid;
+}
+table.dataTable > tbody > tr.selected > * {
+  @apply bg-main/75 text-white;
+}
+table.dataTable.stripe > tbody > tr:nth-child(odd).selected > *, table.dataTable.display > tbody > tr:nth-child(odd).selected > * {
+  @apply bg-main/80 text-white;
+}
+table.dataTable.row-border > tbody > tr.selected + tr.selected > td, table.dataTable.display > tbody > tr.selected + tr.selected > td {
+  @apply bg-main/65 text-white;
+}
+table.dataTable.hover > tbody > tr.selected:hover > *, table.dataTable.display > tbody > tr.selected:hover > * {
+  @apply bg-main text-white;
+}
+table.dataTable.order-column > tbody tr.selected > .sorting_1,
+table.dataTable.order-column > tbody tr.selected > .sorting_2,
+table.dataTable.order-column > tbody tr.selected > .sorting_3, table.dataTable.display > tbody tr.selected > .sorting_1,
+table.dataTable.display > tbody tr.selected > .sorting_2,
+table.dataTable.display > tbody tr.selected > .sorting_3 {
+  @apply bg-main/90 text-white;
+}
+html.dark table.dataTable.row-border > tbody > tr.selected + tr.selected > td, html.dark table.dataTable.display > tbody > tr.selected + tr.selected > td {
+  @apply border-t-main/75;
+}
+/* datatable end */
+
+/* select2 start */
+#filterModalContent .select2-container .select2-selection--single {
+  @apply border border-darkBg rounded-xl p-2 md:p-1 h-[50px] md:h-auto text-lg;
+}
+#filterModalContent .select2-container--default .select2-selection--single .select2-selection__rendered {
+  @apply leading-10 md:leading-8;
+}
+#filterModalContent .select2-container--default .select2-selection--single .select2-selection__arrow {
+  @apply top-3 right-3 md:top-2 md:right-2;
+}
+#filterModalContent .select2-container--default .select2-selection--single .select2-selection__clear {
+  @apply flex justify-center items-center h-10 mr-5 pr-2 text-red-600 scale-150;
+}
+.dark body .select2-search__field {
+  @apply text-black;
+}
+.select2-results__option select2-results__option--selectable, .dark .select2-results__option--selectable {
+  @apply text-darkBg;
+}
+/* select2 end */

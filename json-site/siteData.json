@@ -1,0 +1,2286 @@
+{
+  "general": {
+    "logo": "/images/logo.png",
+    "siteName": "My CRM",
+    "icon": "/images/icon.png",
+    "title": "My CRM"
+  },
+  "theme": {
+    "darkModeEnabled": true,
+    "colors": {
+      "bg": "#F7F7F7",
+      "text": "#333",
+      "darkBg": "#091625",
+      "darkText": "#FFF",
+      "accept": "#4CAF50",
+      "cancel": "#DC3545",
+      "main": "#87567A",
+      "second": "#2F323A",
+      "third": "#E3D26F",
+      "fourth": "#347FC4",
+      "customColors": {
+        "deneme": "#FF0000",
+        "test": "00FF00"
+      }
+    },
+    "fonts": {
+      "family": "Montserrat",
+      "size": "14px",
+      "custom": [
+        {
+          "name": "Montserrat",
+          "file": "Montserrat.woff2"
+        }
+      ]
+    }
+  },
+  "languages": {
+    "default": "en",
+    "options": [
+      {
+        "code": "en",
+        "label": "English",
+        "data": {
+          "defaults": {
+            "visibility": "Visibility",
+            "visibilityHeader": "Customize Table",
+            "visibilityDesc": "Drag and drop the items in the list to reorder them. Use checkboxes for column visibility.",
+            "filters": "Filters",
+            "sort": "Sort",
+            "next": "Next",
+            "previous": "Previous",
+            "page": "Page",
+            "search": "Search...",
+            "apply": "Apply",
+            "reset": "Reset",
+            "all": "All",
+            "noDataFound": "No data found.",
+            "addToBasket": "Add to basket",
+            "soldOut": "Sold out",
+            "basket": "Basket",
+            "clear": "Clear",
+            "total": "Total",
+            "selectOption": "Select an option",
+            "areYouSure": "Are you sure?",
+            "ok": "OK",
+            "cancel": "Cancel",
+            "datatableRemoveRowMessage": "The row you selected will be removed from the table",
+            "cardClearBasketMessage": "Are you sure you want to clear the basket?",
+            "pageNotFound": "Page not found",
+            "pageNotFoundDesc": "The page you are looking for does not exist. Here are some helpful links:",
+            "goBack": "Go back",
+            "takeMeHome": "Take me home",
+            "save": "Save",
+            "add": "Add",
+            "datatable": {
+              "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+              "infoEmpty": "No data available in table",
+              "loadingRecords": "Loading...",
+              "lengthMenu": "Show _MENU_ entries",
+              "zeroRecords": "Table Empty.",
+              "infoFiltered": "(filtered from _MAX_ total entries)"
+            }
+          },
+          "introduction": "Introduction",
+          "configuration": "Configuration",
+          "examples": "Examples",
+          "datatables": "Datatables",
+          "cards": "Cards",
+          "thisPage": "This Page",
+          "aToZ": "A to Z",
+          "lowestPrice": "Lowest Price",
+          "highestPrice": "Highest Price",
+          "introductionPage": {
+            "seo": {
+              "description": "Introduction",
+              "keyword1": "introduction",
+              "keyword2": "home",
+              "keyword3": "main"
+            },
+            "title1": "JSON-Based Dynamic CRM Generator",
+            "desc1": "The project's goal is to simplify the process of website development, particularly for CRM systems, by utilizing a JSON file and local resources. It enables dynamic generation of a Vue 3 and Tailwind CSS-based website using predefined configurations in the JSON file, making it easier to create, customize, and maintain websites.",
+            "title2": "JSON Configuration",
+            "desc2": "The JSON file forms the foundation of the project and includes the following key components:",
+            "desc3-1": "General Information:",
+            "desc3-2": "In addition to the website's name and logo, it also includes metadata details such as the title, description, and icon.",
+            "desc4-1": "Themes:",
+            "desc4-2": "Specifies settings for visual elements such as color schemes, dark mode enablement, and font configurations. These settings define the overall aesthetic of the website.",
+            "desc5-1": "Pages:",
+            "desc5-2": "Each page is defined within the JSON structure, detailing its layout and the components used. Pages also include a variety of content types to streamline development like DataTable, customType",
+            "desc6": "The content types are integrated directly within the page definitions, making it easier to construct dynamic DOM structures that align with the project's requirements. This approach ensures that the JSON file can handle both general and page-specific configurations efficiently.",
+            "button": "Getting Started"
+          },
+          "configurationPage": {
+            "seo": {
+              "title": "Configuration - My CRM",
+              "description": "Configuration",
+              "keyword1": "configuration",
+              "keyword2": "options",
+              "keyword3": "settings"
+            },
+            "title1": "Getting Started",
+            "subtitle1": "Install Dependencies",
+            "desc1": "Open your terminal and run the following command in the generator folder:",
+            "subtitle2": "Edit data.js in the generator Folder",
+            "desc2": "Navigate to the generator folder, open data.js, and make the necessary adjustments to the data.",
+            "subtitle3": "Generate JSON Files",
+            "desc3": "Run the following command in the generator folder:",
+            "title2": "Configuration",
+            "subtitle4": "General",
+            "desc4": "This section contains basic information about the site. Visual elements such as logo, site name, icon, page title and SEO information are defined here.",
+            "subtitle5": "Theme",
+            "desc5": "Theme settings control the site design. This includes features like dark mode, colors, and fonts. You can also specify custom colors and the project’s logo and icon. Additionally, this section allows you to include fonts and images in the project directory.",
+            "subtitle6": "Pages",
+            "desc6": "In this section, the pages of the site are defined. Information about SEO, page-specific content, and the components used in each page are provided. There are two main types of pages:",
+            "desc7-1": "Datatable:",
+            "desc7-2": "A page that includes a table of data that can be dynamically populated through an AJAX call. This is useful for displaying large amounts of data in a structured format with the ability to filter, search, and paginate.",
+            "desc8-1": "Custom:",
+            "desc8-2": "A page that allows for more customized content. The content is specified directly in the JSON file and can include custom HTML or Vue components.",
+            "subtitle7": "Custom Scripts",
+            "desc9": "Shareable functions and scripts are located here.",
+            "button": "Examples"
+          },
+          "examplesPage": {
+            "seo": {
+              "title": "Examples - My CRM",
+              "description": "Overview of Examples",
+              "keyword1": "example",
+              "keyword2": "demo",
+              "keyword3": "try"
+            },
+            "title1": "Datatable Example",
+            "title2": "Card Example",
+            "exampleTable": {
+              "group": "Group",
+              "name": "Name",
+              "mail": "Mail",
+              "message": "Message"
+            },
+            "exampleCard": {
+              "searchPlaceholder": "Search products..."
+            },
+            "exampleSplash": {
+              "title": "Example Splash",
+              "description": "This is an example splash screen. This splash close automatically in 3 seconds.",
+              "button": "Close Now"
+            },
+            "helper": {
+              "page": "Examples Page",
+              "info": "In this page, you can see a list of examples. Example Dom types are: DataTable, cards and custom. If you want to see this page's json you can click the 'this page' button at the bottom of the page.",
+              "shortcuts": [
+                "Example shortcut description.",
+                "For the cancel.",
+                "Example shortcut description."
+              ]
+            }
+          },
+          "datatablesPage": {
+            "seo": {
+              "title": "Datatables - My CRM",
+              "description": "In this page you can see datatable examples.",
+              "keywords1": "datatable",
+              "keywords2": "example",
+              "keywords3": "table"
+            },
+            "title1": "Datatable with filters",
+            "title2": "Editable datatable",
+            "title3": "Multiselect datatable",
+            "save": "Save",
+            "cancel": "Cancel",
+            "table1": {
+              "plate": "Plate",
+              "model": "Model",
+              "customer": "Customer",
+              "location": "Location",
+              "date": "Date"
+            },
+            "table2": {
+              "plate": "Plate",
+              "model": "Model",
+              "androidImei": "Android Imei",
+              "androidMac": "Andorid Mac",
+              "modemImei": "Modem Imei",
+              "modemMac": "Modem Mac",
+              "plcImei": "PLC Imei",
+              "plcMac": "PLC Mac",
+              "test": "Test",
+              "contextMenu": {
+                "edit": "Edit",
+                "delete": "Delete",
+                "test": "Test"
+              },
+              "add": "Add Automat",
+              "edit": "Edit Automat"
+            },
+            "table3": {
+              "plate": "Plate",
+              "model": "Model",
+              "androidImei": "Android Imei",
+              "androidMac": "Andorid Mac",
+              "modemImei": "Modem Imei",
+              "modemMac": "Modem Mac",
+              "plcImei": "PLC Imei",
+              "plcMac": "PLC Mac",
+              "test": "Test",
+              "contextMenu": {
+                "edit": "Edit",
+                "delete": "Delete",
+                "test": "Test"
+              },
+              "add": "Add Automat",
+              "edit": "Edit Automat"
+            }
+          },
+          "cardsPage": {
+            "seo": {
+              "title": "Cards - My CRM",
+              "description": "In this page you can see shopping card examples.",
+              "keywords1": "card",
+              "keywords3": "shopping",
+              "keywords4": "basket"
+            },
+            "card1": {
+              "searchPlaceholder": "Search products...",
+              "category": "Category",
+              "brand": "Brand",
+              "categorySelection": "Select Category"
+            },
+            "card2": {
+              "searchPlaceholder": "Search...",
+              "category": "Category",
+              "brand": "Brand",
+              "categorySelection": "Select Category"
+            }
+          }
+        }
+      },
+      {
+        "code": "tr",
+        "label": "Türkçe",
+        "data": {
+          "defaults": {
+            "visibility": "Görünürlük",
+            "visibilityHeader": "Tabloyu Özelleştir",
+            "visibilityDesc": "Liste içindeki öğeleri yeniden sıralamak için sürükleyip bırakın. Sütun görünürlüğü için onay kutularını kullanın.",
+            "filters": "Filtreler",
+            "sort": "Sırala",
+            "next": "Sonraki",
+            "previous": "Önceki",
+            "page": "Sayfa",
+            "search": "Ara...",
+            "apply": "Uygula",
+            "reset": "Sıfırla",
+            "all": "Hepsi",
+            "noDataFound": "Veri Bulunamadı.",
+            "addToBasket": "Sepete Ekle",
+            "soldOut": "Tükendi",
+            "basket": "Sepet",
+            "clear": "Temizle",
+            "total": "Toplam",
+            "selectOption": "Bir seçenek seçin",
+            "areYouSure": "Emin misiniz?",
+            "ok": "Tamam",
+            "cancel": "İptal",
+            "datatableRemoveRowMessage": "Seçtiğiniz satır tablodan kaldırılacak",
+            "cardClearBasketMessage": "Sepeti temizlemek istediğinize emin misiniz?",
+            "pageNotFound": "Sayfa bulunamadı",
+            "pageNotFoundDesc": "Aradığınız sayfa mevcut değil. İşte bazı yardımcı bağlantılar:",
+            "goBack": "Geri Dön",
+            "takeMeHome": "Ana Sayfaya Dön",
+            "save": "Kaydet",
+            "add": "Ekle",
+            "datatable": {
+              "info": "_TOTAL_ kayıttan _START_ - _END_ kayıt gösteriliyor.",
+              "infoEmpty": "Gösterilecek hiç kayıt yok.",
+              "loadingRecords": "Kayıtlar yükleniyor.",
+              "lengthMenu": "Sayfada _MENU_ kayıt göster",
+              "zeroRecords": "Tablo Boş.",
+              "infoFiltered": "(toplam _MAX_ kayıttan filtrelenenler)"
+            }
+          },
+          "introduction": "Anasayfa",
+          "configuration": "Yapılandırma",
+          "examples": "Örnekler",
+          "datatables": "Tablolar",
+          "cards": "Kartlar",
+          "thisPage": "Bu Sayfa",
+          "aToZ": "A'dan Z'ye",
+          "lowestPrice": "En Düşük Fiyat",
+          "highestPrice": "En Yüksek Fiyat",
+          "introductionPage": {
+            "seo": {
+              "description": "Tanıtım",
+              "keyword1": "tanıtım",
+              "keyword2": "anasayfa",
+              "keyword3": "ana"
+            },
+            "title1": "JSON Tabanlı Dinamik CRM Üretici",
+            "desc1": "Projenin amacı, bir JSON dosyası ve yerel kaynaklar kullanarak web sitesi geliştirme sürecini basitleştirmektir. Bu, önceden tanımlanmış yapılandırmaları kullanarak Vue 3 ve Tailwind CSS tabanlı bir web sitesinin dinamik olarak oluşturulmasını sağlar ve web sitelerinin oluşturulmasını, özelleştirilmesini ve bakımını kolaylaştırır.",
+            "title2": "JSON Yapılandırması",
+            "desc2": "JSON dosyası, projenin temelini oluşturur ve aşağıdaki ana bileşenleri içerir:",
+            "desc3-1": "Genel Bilgiler:",
+            "desc3-2": "Web sitesinin adı ve logosunun yanı sıra, başlık, açıklama ve simge gibi meta veri ayrıntılarını da içerir.",
+            "desc4-1": "Temalar:",
+            "desc4-2": "Renk şemaları, karanlık mod etkinleştirme ve yazı tipi yapılandırmaları gibi görsel öğelerin ayarlarını belirtir. Bu ayarlar, web sitesinin genel estetiğini tanımlar.",
+            "desc5-1": "Sayfalar:",
+            "desc5-2": "Her sayfa, JSON yapısı içinde tanımlanır ve sayfanın düzenini ve kullanılan bileşenleri detaylandırır. Sayfalar ayrıca DataTable, customType gibi geliştirmeyi kolaylaştırmak için çeşitli içerik türlerini içerir.",
+            "desc6": "İçerik türleri, sayfa tanımlarının içine doğrudan entegre edilmiştir ve projenin gereksinimlerine uygun dinamik DOM yapılarının oluşturulmasını kolaylaştırır. Bu yaklaşım, JSON dosyasının hem genel hem de sayfaya özgü yapılandırmaları verimli bir şekilde ele almasını sağlar.",
+            "button": "Başlarken"
+          },
+          "configurationPage": {
+            "seo": {
+              "title": "Başlarken - My CRM",
+              "description": "Başlarken",
+              "keyword1": "başlarken",
+              "keyword2": "seçenekler",
+              "keyword3": "ayarlar"
+            },
+            "title1": "Başlarken",
+            "subtitle1": "Bağımlılıkları Yükle",
+            "desc1": "Terminalinizi açın ve aşağıdaki komutu generator klasöründe çalıştırın:",
+            "subtitle2": "data.js'yi Düzenle",
+            "desc2": "generator klasörüne gidin, data.js'yi açın ve gerekli ayarlamaları yapın.",
+            "subtitle3": "JSON Dosyalarını Oluştur",
+            "desc3": "generator klasöründe aşağıdaki komutu çalıştırın:",
+            "title2": "Yapılandırma",
+            "subtitle4": "Genel",
+            "desc4": "Bu bölüm, sitenin temel bilgilerini içerir. Logo, site adı, simge, sayfa başlığı ve SEO bilgileri gibi görsel öğeler burada tanımlanır.",
+            "subtitle5": "Tema",
+            "desc5": "Tema ayarları, sitenin tasarımını kontrol eder. Bu, karanlık mod, renkler ve yazı tipleri gibi özellikleri içerir. Ayrıca, özel renkleri ve projenin logosunu ve simgesini belirtmenizi sağlar. Ayrıca, bu bölümde projeye özel yazı tipleri ve resimler ekleyebilirsiniz.",
+            "subtitle6": "Sayfalar",
+            "desc6": "Bu bölümde, sitenin sayfaları tanımlanır. SEO hakkında bilgi, sayfaya özgü içerik ve her sayfada kullanılan bileşenler sağlanır. İki ana sayfa türü vardır:",
+            "desc7-1": "Datatable:",
+            "desc7-2": "AJAX çağrısı aracılığıyla dinamik olarak doldurulabilen bir veri tablosunu içeren bir sayfa. Bu, büyük miktarda veriyi filtreleme, arama ve sayfalama yeteneği ile yapılandırılmış bir formatta görüntülemek için kullanışlıdır.",
+            "desc8-1": "Custom:",
+            "desc8-2": "Daha özelleştirilmiş içeriğe izin veren bir sayfa. İçerik, JSON dosyasında doğrudan belirtilir ve özel HTML veya Vue bileşenlerini içerebilir.",
+            "subtitle7": "Özel Scriptler",
+            "desc9": "Paylaşılabilir işlevler ve scriptler burada bulunur.",
+            "button": "Örnekler"
+          },
+          "examplesPage": {
+            "seo": {
+              "title": "Örnekler - My CRM",
+              "description": "Örnekleri inceleyin.",
+              "keyword1": "örnek",
+              "keyword2": "demo",
+              "keyword3": "dene"
+            },
+            "title1": "Veri Tablosu Örneği",
+            "title2": "Kart Örneği",
+            "exampleTable": {
+              "group": "Grup",
+              "name": "İsim",
+              "mail": "Mail",
+              "message": "Mesaj"
+            },
+            "exampleCard": {
+              "searchPlaceholder": "Ürünleri ara..."
+            },
+            "exampleSplash": {
+              "title": "Örnek Splash",
+              "description": "Bu bir örnek splash ekranıdır. Bu splash 3 saniye içinde otomatik olarak kapanacaktır.",
+              "button": "Şimdi Kapat"
+            },
+            "helper": {
+              "page": "Örnekler Sayfası",
+              "info": "Bu sayfada örneklerin bir listesini görebilirsiniz. Örnek Dom türleri: DataTable, cards ve custom. Bu sayfanın json'unu görmek istiyorsanız sayfanın altındaki 'bu sayfa' butonuna tıklayabilirsiniz.",
+              "shortcuts": [
+                "Örnek kısayol açıklaması.",
+                "İptal etmek için kullanılır.",
+                "Örnek kısayol açıklaması."
+              ]
+            }
+          },
+          "datatablesPage": {
+            "seo": {
+              "title": "Veritabloları - My CRM",
+              "description": "Veritablolarının örneklerini inceleyin.",
+              "keywords1": "veritablo",
+              "keywords2": "örnek",
+              "keywords3": "tablo"
+            },
+            "title1": "Filtreli Veri Tablosu",
+            "title2": "Düzenlebilir Veri Tablosu",
+            "title3": "Çoklu Seçim Veri Tablosu",
+            "save": "Kaydet",
+            "cancel": "İptal",
+            "table1": {
+              "plate": "Plaka",
+              "model": "Model",
+              "customer": "Müşteri",
+              "location": "Konum",
+              "date": "Tarih"
+            },
+            "table2": {
+              "plate": "Plaka",
+              "model": "Model",
+              "androidImei": "Android Imei",
+              "androidMac": "Andorid Mac",
+              "modemImei": "Modem Imei",
+              "modemMac": "Modem Mac",
+              "plcImei": "PLC Imei",
+              "plcMac": "PLC Mac",
+              "test": "Test",
+              "contextMenu": {
+                "edit": "Düzenle",
+                "delete": "Sil",
+                "test": "Test"
+              },
+              "add": "Otomat Ekle",
+              "edit": "Otomat Düzenle"
+            },
+            "table3": {
+              "plate": "Plaka",
+              "model": "Model",
+              "androidImei": "Android Imei",
+              "androidMac": "Andorid Mac",
+              "modemImei": "Modem Imei",
+              "modemMac": "Modem Mac",
+              "plcImei": "PLC Imei",
+              "plcMac": "PLC Mac",
+              "test": "Test",
+              "contextMenu": {
+                "edit": "Düzenle",
+                "delete": "Sil",
+                "test": "Test"
+              },
+              "add": "Otomat Ekle",
+              "edit": "Otomat Düzenle"
+            }
+          },
+          "cardsPage": {
+            "seo": {
+              "title": "Kartlar - My CRM",
+              "description": "Kartların örneklerini inceleyin.",
+              "keywords1": "kart",
+              "keywords3": "alışveriş",
+              "keywords4": "sepet"
+            },
+            "card1": {
+              "searchPlaceholder": "Ürünleri ara...",
+              "category": "Kategori",
+              "brand": "Marka",
+              "categorySelection": "Kategori Seçiniz"
+            },
+            "card2": {
+              "searchPlaceholder": "Arama yapın...",
+              "category": "Kategori",
+              "brand": "Marka",
+              "categorySelection": "Kategori Seçiniz"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "pages": [
+    {
+      "file": "Introduction.vue",
+      "name": "introduction",
+      "path": "/",
+      "icon": "fa-solid fa-home",
+      "seo": {
+        "description": "introductionPage.seo.description",
+        "keywords": [
+          "introductionPage.seo.keyword1",
+          "introductionPage.seo.keyword2",
+          "introductionPage.seo.keyword3"
+        ]
+      },
+      "doms": [
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex flex-col gap-6 justify-center items-center text-lg\">\n                    <h1 class=\"text-main text-center text-[2.25rem] leading-10 font-bold\">{{$t(\"introductionPage.title1\")}}</h1>\n                    <div class=\"max-w-[1000px] flex flex-col gap-4 justify-center items-center\">\n                        <p class=\"text-center\">{{$t(\"introductionPage.desc1\")}}</p>\n                        <img style=\"border-width:4px;\" class=\"mb-4 px-4 py-2 border border-dashed border-main dark:border-bg rounded-xl dark:hidden\" title=\"process\" src=\"/images/process.png\" />\n                        <img style=\"border-width:4px;\" class=\"mb-4 px-4 py-2 border border-dashed border-main dark:border-bg rounded-xl hidden dark:block\" title=\"process\" src=\"/images/process-dark.png\" />\n                    </div>\n                    <div class=\"max-w-[1000px] flex flex-col gap-4 justify-center items-center\">\n                        <h2 class=\"text-main text-center text-[1.75rem] font-semibold\">{{$t(\"introductionPage.title2\")}}</h2>\n                        <p>{{$t(\"introductionPage.desc2\")}}</p>\n                        <img style=\"border-width:4px;\" class=\"mb-4 px-4 py-2 border border-dashed border-main dark:border-bg rounded-xl dark:hidden\" title=\"json config\" src=\"/images/json-detail.png\" />\n                        <img style=\"border-width:4px;\" class=\"mb-4 px-4 py-2 border border-dashed border-main dark:border-bg rounded-xl hidden dark:block\" title=\"json config\" src=\"/images/json-detail-dark.png\" />\n                        <span><span class=\"font-semibold\">{{$t(\"introductionPage.desc3-1\")}} </span>{{$t(\"introductionPage.desc3-2\")}}</span>\n                        <span><span class=\"font-semibold\">{{$t(\"introductionPage.desc4-1\")}} </span>{{$t(\"introductionPage.desc4-2\")}}</span>\n                        <span><span class=\"font-semibold\">{{$t(\"introductionPage.desc5-1\")}} </span>{{$t(\"introductionPage.desc5-2\")}}</span>\n                        <span>{{$t(\"introductionPage.desc6\")}}</span>\n                    </div>\n                </div>"
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full py-2 mt-2 flex justify-center items-center\">\n                    <div class=\"w-full max-w-[1000px] gap-8 flex justify-between items-center\">\n                        <button @click=gettingStarted class=\"px-4 py-2 bg-third text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"introductionPage.button\")}}</button>\n                        <button @click=\"sharedFunctions.getPageByPath(route.path)\" class=\"px-4 py-2 bg-main text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"thisPage\")}}</button>\n                    </div>\n                </div>"
+        }
+      ],
+      "scopedCss": "",
+      "customScripts": "\nfunction gettingStarted() {\n    router.push({ path: '/configuration' });\n}\n",
+      "customReadyScripts": ""
+    },
+    {
+      "file": "ConfigurationPage.vue",
+      "name": "configuration",
+      "path": "/configuration",
+      "icon": "fa-solid fa-hammer",
+      "seo": {
+        "title": "configurationPage.seo.title",
+        "description": "configurationPage.seo.description",
+        "keywords": [
+          "configurationPage.seo.keyword1",
+          "configurationPage.seo.keyword2",
+          "configurationPage.seo.keyword3"
+        ]
+      },
+      "doms": [
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full py-0  md:px-0 mt-2 flex justify-center items-center\">\n                    <div class=\"p-6 w-full max-w-[1000px]\">\n                        <h1 class=\"text-3xl font-bold text-center mb-6\">{{$t(\"configurationPage.title1\")}}</h1>\n                        <ol class=\"list-decimal list-inside space-y-4\">\n                            <li>\n                                <strong>{{$t(\"configurationPage.subtitle1\")}}</strong>\n                                <p>{{$t(\"configurationPage.desc1\")}}</p>\n                                <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>npm install</code></pre>\n                            </li>\n                            <li>\n                                <strong>{{$t(\"configurationPage.subtitle2\")}}</strong>\n                                <p>{{$t(\"configurationPage.desc2\")}}</p>\n                            </li>\n                            <li>\n                                <strong>{{$t(\"configurationPage.subtitle3\")}}</strong>\n                                <p>{{$t(\"configurationPage.desc3\")}}</p>\n                                <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>npm run generate</code></pre>\n                            </li>\n                        </ol>\n                    </div>\n                </div>"
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full py-0  md:px-0 mt-2 flex justify-center items-center\">\n<div class=\"p-6 w-full max-w-[1000px]\">\n<h1 class=\"text-3xl font-bold text-center mb-6\">{{$t(\"configurationPage.title2\")}}</h1>\n<ol class=\"list-decimal list-inside space-y-4\">\n<li>\n  <strong>{{$t(\"configurationPage.subtitle4\")}} </strong>\n  <p>{{$t(\"configurationPage.desc4\")}}</p>\n  <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>\n{\n\"logo\": \"/images/logo.png\",   \n\"siteName\": \"My CRM\",         \n\"icon\": \"/images/icon.png\",   \n\"title\": \"My CRM\"      \n}\n  </code></pre>\n</li>\n<li>\n  <strong>{{$t(\"configurationPage.subtitle5\")}}</strong>\n  <p>{{$t(\"configurationPage.desc5\")}}</p>\n  <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>\n\"theme\": {\n\"darkModeEnabled\": true,\n\"colors\": {\n\"bg\": \"#F7F7F7\",\n\"text\": \"#333\",\n\"darkBg\": \"#091625\",\n\"darkText\": \"#FFF\",\n\"accept\": \"#4CAF50\",\n\"cancel\": \"#DC3545\",\n\"main\": \"#87567A\",\n\"second\": \"#2F323A\",\n\"third\": \"#E3D26F\",\n\"fourth\": \"#347FC4\",\n\"customColors\": {\n\"test\": \"00FF00\"\n...\n}\n},\n\"font\": {\n\"family\": \"Montserrat\",\n\"size\": \"14px\",\n\"custom\": [\n{\n\"name\": \"Montserrat\",\n\"file\": \"Montserrat.woff2\"\n}\n...\n]\n},\n},\n  </code></pre>\n</li>\n<li>\n  <strong>{{$t(\"configurationPage.subtitle6\")}}</strong>\n  <p>{{$t(\"configurationPage.desc6\")}}</p>\n  <p class=\"p-3\"><span class=\"font-semibold\">{{$t(\"configurationPage.desc7-1\")}}</span> {{$t(\"configurationPage.desc7-2\")}}</p>\n  <p class=\"p-3 pt-0\"><span class=\"font-semibold\">{{$t(\"configurationPage.desc8-1\")}}</span> {{$t(\"configurationPage.desc8-2\")}}</p>\n  <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>\n{\n\"file\": \"Configuration.vue\",\n\"name\": \"Configuration\",\n\"path\": \"/configuration\",\n\"icon\": 'fa-solid fa-layer-group',\n\"seo\": {\n\"title\": \"Configuration - My CRM\",\n\"description\": \"Configuration\",\n\"keywords\": [\"Configuration\", \"options\", \"settings\"]\n},\n\"doms\": [\n{\n\"type\": \"custom\",\n\"content\": 'Content here'\n},\n{\n\"type\": \"datatable\",\n\"id\": \"productsTable\",\n\"columns\": [\"title\", \"url\", \"albumId\", \"thumbnailUrl\"],\n\"ajax\": { \"url\": \"https://jsonplaceholder.typicode.com/photos\", \"method\": \"GET\", \"dataSrc\": '' },\n\"filters\": [],\n\"toolbar\": []\n},\n{\n\"type\": \"custom\",\n\"content\": 'Content here'\n}\n],\n\"customScripts\": 'custom scripts',\n\"customReadyScripts\": 'dom ready custom scripts',\n}\n  </code></pre>\n</li>\n<li>\n  <strong>{{$t(\"configurationPage.subtitle7\")}}</strong>\n  <p>{{$t(\"configurationPage.desc9\")}}</p>\n  <pre class=\"bg-darkBg text-bg dark:bg-black p-4 mt-2 rounded-md overflow-hidden\"><code>\n\"scripts\": [\n{\n\"name\": \"shared\",\n\"pages\": [],\n\"script\": \"import siteData from '../../siteData.json'\nimport commonFunctions from './common';\nconst sharedFunctions = {\ngetPageByPath: function(path) {\n  const currentPageJson = siteData.pages.find(x => x.path == path);\n  const formatted = JSON.stringify(currentPageJson);\n  commonFunctions.openModal(500, 600, formatted);\n}\n}\nexport { sharedFunctions }\"\n}\n]\n  </code></pre>\n</li>\n</ol>\n</div>\n</div>"
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-center items-center\">\n                    <div class=\"w-full py-0 px-6 max-w-[1000px] gap-8 flex justify-between items-center\">\n                        <button @click=examples class=\"px-4 py-2 bg-third text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"configurationPage.button\")}}</button>\n                        <button @click=\"sharedFunctions.getPageByPath(route.path)\" class=\"px-4 py-2 bg-main text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"thisPage\")}}</button>\n                    </div>\n                </div>"
+        }
+      ],
+      "customScripts": "\nfunction examples() {\n    router.push({ path: '/examples' });\n}\n",
+      "customReadyScripts": ""
+    },
+    {
+      "file": "ExamplesPage.vue",
+      "name": "examples",
+      "path": "/examples",
+      "icon": "fa-solid fa-chart-simple",
+      "seo": {
+        "title": "examplesPage.seo.title",
+        "description": "examplesPage.seo.description",
+        "keywords": [
+          "examplesPage.seo.keywords1",
+          "examplesPage.seo.keywords2",
+          "examplesPage.seo.keywords3"
+        ]
+      },
+      "pageCss": "w-full flex flex-col gap-4",
+      "doms": [
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-beetween items-center\">\n        <div class=\"w-full flex items-center gap-8\">\n        <h1 class=\"text-2xl font-bold text-second dark:text-white\">{{$t(\"examplesPage.title1\")}}</h1>\n        </div>\n    </div>"
+        },
+        {
+          "type": "datatable",
+          "containerClass": "w-full",
+          "id": "messagesTable",
+          "name": "messagesTable",
+          "columns": [
+            {
+              "order": 0,
+              "name": "postId",
+              "title": "examplesPage.exampleTable.group",
+              "checkable": true
+            },
+            {
+              "order": 1,
+              "name": "name",
+              "title": "examplesPage.exampleTable.name",
+              "checkable": false
+            },
+            {
+              "order": 2,
+              "name": "email",
+              "title": "examplesPage.exampleTable.mail",
+              "checkable": true
+            },
+            {
+              "order": 3,
+              "name": "body",
+              "title": "examplesPage.exampleTable.message",
+              "checkable": false
+            }
+          ],
+          "ajax": {
+            "url": "https://jsonplaceholder.typicode.com/comments",
+            "method": "GET",
+            "dataSrc": ""
+          },
+          "serverSide": false,
+          "tableOptions": {}
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-beetween items-center mt-4\">\n        <div class=\"w-full flex items-center gap-8\">\n        <h1 class=\"text-2xl font-bold text-second dark:text-white\">{{$t(\"examplesPage.title2\")}}</h1>\n        </div>\n    </div>"
+        },
+        {
+          "type": "cards",
+          "containerClass": "w-full",
+          "id": "shoppingCards",
+          "name": "shoppingCards",
+          "ajax": {
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "dataType": "json",
+            "contentType": "application/json",
+            "stringifyData": true
+          },
+          "paging": {
+            "type": 0,
+            "size": 10
+          },
+          "ordering": {
+            "name": "orderType",
+            "options": [
+              {
+                "name": "aToZ",
+                "id": "aToZ",
+                "value": 1
+              },
+              {
+                "name": "lowestPrice",
+                "id": "lowestPrice",
+                "value": 2
+              },
+              {
+                "name": "highestPrice",
+                "id": "highestPrice",
+                "value": 3
+              }
+            ]
+          },
+          "searchBar": {
+            "name": "searchValue",
+            "placeholder": "examplesPage.exampleCard.searchPlaceholder",
+            "delay": 300
+          },
+          "cardLayout": {
+            "type": 1,
+            "card": {
+              "id": "ID",
+              "title": "UrunAdi",
+              "img": "Resimler[0]",
+              "envanter": "Envanter",
+              "barcode": "Barkodlar[0].Barkodu",
+              "price": "Tutar",
+              "brand": "UreticiFirmaAdi",
+              "category": "Kategori"
+            },
+            "viewMode": {
+              "changeable": true,
+              "default": "grid"
+            }
+          }
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-center items-center mt-4\">\n        <div class=\"w-full py-0 gap-8 flex justify-between items-center\">\n        <div></div>\n        <button @click=\"sharedFunctions.getPageByPath(route.path)\" class=\"px-4 py-2 bg-main text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"thisPage\")}}</button>\n        </div>\n    </div>"
+        }
+      ],
+      "customScripts": "\nimport { toast } from \"vue3-toastify\";\nfunction gettingStarted() {\n    router.push({ path: '/configuration' });\n}\n",
+      "customReadyScripts": "\ntoast.success(\"Toast Test!\");\ncommonFunctions.useSplashScreen({\"title\": \"examplesPage.exampleSplash.title\", \"description\": \"examplesPage.exampleSplash.description\", \"buttons\": [{\"text\": \"examplesPage.exampleSplash.button\", \"action\": commonFunctions.hideSplashScreen}], \"timeout\": 3000});\n",
+      "help": {
+        "page": "examplesPage.helper.page",
+        "info": "examplesPage.helper.info",
+        "shortcuts": [
+          {
+            "shortcut": [
+              {
+                "key": "/images/ctrl_key.png"
+              },
+              {
+                "key": "/images/letter_k.png"
+              }
+            ],
+            "shortcutDescription": "examplesPage.helper.shortcuts[0]"
+          },
+          {
+            "shortcut": [
+              {
+                "key": "/images/esc_key.png"
+              }
+            ],
+            "shortcutDescription": "examplesPage.helper.shortcuts[1]"
+          },
+          {
+            "shortcut": [
+              {
+                "key": "/images/right-click.png"
+              }
+            ],
+            "shortcutDescription": "examplesPage.helper.shortcuts[2]"
+          }
+        ],
+        "link": "https://www.youtube.com/embed/pad_iFvqtYw?si=cWmRAfFFvFuJR8Hj"
+      },
+      "shortcuts": [
+        {
+          "keys": [
+            "ctrl",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "alt",
+            "s"
+          ]
+        },
+        {
+          "keys": [
+            "p"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "Datatables.vue",
+      "name": "datatables",
+      "path": "/datatables",
+      "icon": "fa-solid fa-table",
+      "seo": {
+        "title": "datatablesPage.seo.title",
+        "description": "datatablesPage.seo.description",
+        "keywords": [
+          "datatablesPage.seo.keywords1",
+          "datatablesPage.seo.keywords2",
+          "datatablesPage.seo.keywords3"
+        ]
+      },
+      "pageCss": "w-full flex flex-col justify-center items-center gap-4",
+      "doms": [
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-beetween items-center mt-4\">\n        <div class=\"w-full flex items-center gap-8\">\n            <h1 class=\"text-2xl font-bold text-second dark:text-white\">{{$t(\"datatablesPage.title1\")}}</h1>\n        </div>\n    </div>"
+        },
+        {
+          "type": "datatable",
+          "containerClass": "w-full",
+          "id": "transferedAutomatTable",
+          "name": "transferedAutomatTable",
+          "columns": [
+            {
+              "order": 1,
+              "name": "model",
+              "title": "datatablesPage.table1.model",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 0,
+              "name": "plate",
+              "title": "datatablesPage.table1.plate",
+              "checkable": false,
+              "orderable": false
+            },
+            {
+              "order": 2,
+              "name": "customerName",
+              "title": "datatablesPage.table1.customer",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 3,
+              "name": "location",
+              "title": "datatablesPage.table1.location",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 4,
+              "name": "transferedTime",
+              "title": "datatablesPage.table1.date",
+              "checkable": true,
+              "orderable": true
+            }
+          ],
+          "filters": {
+            "data": [
+              {
+                "data": "IsField",
+                "name": "IsField",
+                "type": "check",
+                "value": true,
+                "default": true,
+                "visible": false
+              },
+              {
+                "data": "plate",
+                "name": "datatablesPage.table1.plate",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "model",
+                "name": "datatablesPage.table1.model",
+                "type": "select",
+                "options": [
+                  {
+                    "value": "AA-91",
+                    "label": "AA-91"
+                  }
+                ],
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "customerId",
+                "name": "datatablesPage.table1.customer",
+                "type": "select",
+                "options": [
+                  {
+                    "value": "1",
+                    "label": "Eren"
+                  }
+                ],
+                "value": null,
+                "default": null,
+                "visible": true
+              }
+            ]
+          },
+          "ajax": {
+            "url": "http://localhost:44350/warehouse/get-automats",
+            "method": "POST",
+            "data": [
+              {
+                "name": "forTest",
+                "value": 4
+              }
+            ]
+          },
+          "serverSide": true,
+          "tableOptions": {
+            "order": [
+              [
+                4,
+                "desc"
+              ]
+            ],
+            "keys": true
+          },
+          "options": {}
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-beetween items-center mt-4\">\n                    <div class=\"w-full flex items-center gap-8\">\n                    <h1 class=\"text-2xl font-bold text-second dark:text-white\">{{$t(\"datatablesPage.title2\")}}</h1>\n                    </div>\n                </div>"
+        },
+        {
+          "type": "datatable",
+          "containerClass": "w-full",
+          "id": "createdAutomatTable",
+          "name": "createdAutomatTable",
+          "columns": [
+            {
+              "order": 0,
+              "name": "plate",
+              "title": "datatablesPage.table2.plate",
+              "checkable": false,
+              "orderable": false
+            },
+            {
+              "order": 1,
+              "name": "model",
+              "title": "datatablesPage.table2.model",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 2,
+              "name": "imeiAndroid",
+              "title": "datatablesPage.table2.androidImei",
+              "checkable": true,
+              "orderable": false,
+              "className": "notSelectRow"
+            },
+            {
+              "order": 3,
+              "name": "macAndroid",
+              "title": "datatablesPage.table2.androidMac",
+              "checkable": true,
+              "orderable": false,
+              "className": "notSelectRow"
+            },
+            {
+              "order": 4,
+              "name": "imeimodem",
+              "title": "datatablesPage.table2.modemImei",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 5,
+              "name": "macmodem",
+              "title": "datatablesPage.table2.modemMac",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 6,
+              "name": "imeiplc",
+              "title": "datatablesPage.table2.plcImei",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 7,
+              "name": "macplc",
+              "title": "datatablesPage.table2.plcMac",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 8,
+              "name": null,
+              "title": "datatablesPage.table2.test",
+              "checkable": true,
+              "orderable": false
+            }
+          ],
+          "filters": {
+            "data": [
+              {
+                "data": "plate",
+                "name": "datatablesPage.table2.plate",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "model",
+                "name": "Model",
+                "type": "select",
+                "options": [
+                  {
+                    "value": "AA-91",
+                    "label": "AA-91"
+                  }
+                ],
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "androidImei",
+                "name": "Android Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "androidMac",
+                "name": "Android Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "modemImei",
+                "name": "Modem Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "modemMac",
+                "name": "Modem Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "plcImei",
+                "name": "PLC Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "plcMac",
+                "name": "PLC Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              }
+            ]
+          },
+          "ajax": {
+            "url": "http://localhost:44350/production/get-manufacts",
+            "method": "POST",
+            "data": [
+              {
+                "name": "changedCells",
+                "value": "$('#showChangedCells').is(':checked') && $('#showChangedCells').is(':visible')  ?  createdAutomatTableCellUpdates.map(item => (item.id)) : null"
+              },
+              {
+                "name": "forTest",
+                "value": 4
+              }
+            ]
+          },
+          "serverSide": true,
+          "tableOptions": {
+            "order": false,
+            "keys": true
+          },
+          "options": {
+            "rowSelect": true,
+            "rightClick": [
+              {
+                "name": "datatablesPage.table2.contextMenu.edit"
+              },
+              {
+                "name": "datatablesPage.table2.contextMenu.delete"
+              },
+              {
+                "name": "datatablesPage.table2.contextMenu.test"
+              }
+            ]
+          },
+          "operations": {
+            "add": {
+              "title": "datatablesPage.table2.add",
+              "url": "http://localhost:44350/production/set-automat",
+              "method": "POST",
+              "data": [
+                {
+                  "name": "plaka",
+                  "title": "datatablesPage.table2.plate",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xxx-xx-xxx",
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plate must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 14
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "model",
+                  "title": "datatablesPage.table2.model",
+                  "type": "select",
+                  "required": true,
+                  "options": [
+                    {
+                      "value": "",
+                      "label": "Seçim yapınız"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-91"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-92"
+                    }
+                  ],
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != ''",
+                      "errMessage": "Model cannot be null."
+                    }
+                  ],
+                  "visible": true
+                },
+                {
+                  "name": "serialNumber",
+                  "title": "Serial number",
+                  "type": "number",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xxxxxxxxxxx",
+                  "showAllErrors": true,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 7",
+                      "errMessage": "Serial number must be longer than 7 characters."
+                    },
+                    {
+                      "control": "return !value.startsWith('000')",
+                      "errMessage": "Serial number cannot start with 000."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 14,
+                    "bannedKeys": [
+                      "68-90",
+                      32
+                    ]
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidImei",
+                  "title": "Android imei",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xx-xx-xx-xx",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidMac",
+                  "title": "Android mac",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xx-xx-xx-xx",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemImei",
+                  "title": "Modem imei",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemMac",
+                  "title": "Modem mac",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcImei",
+                  "title": "Plc imei",
+                  "type": "string",
+                  "required": false,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value == '' || value.length > 4;",
+                      "errMessage": "Plc imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcMac",
+                  "title": "Plc mac",
+                  "type": "string",
+                  "required": false,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return !value.startsWith('000')",
+                      "errMessage": "Serial number cannot start with 000."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "defaultData",
+                  "value": true,
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": false
+                }
+              ]
+            },
+            "edit": {
+              "title": "datatablesPage.table2.edit",
+              "url": "http://localhost:44350/production/update-automat",
+              "method": "POST",
+              "data": [
+                {
+                  "name": "manufactId",
+                  "value": "selectedRow.manufactId",
+                  "visible": false
+                },
+                {
+                  "name": "plaka",
+                  "value": "selectedRow.plate",
+                  "visible": false
+                },
+                {
+                  "name": "serialNumber",
+                  "value": "selectedRow.snAndroid",
+                  "visible": false
+                },
+                {
+                  "name": "model",
+                  "title": "datatablesPage.table2.model",
+                  "type": "select",
+                  "value": "selectedRow.modelID",
+                  "options": [
+                    {
+                      "value": "",
+                      "label": "Seçim yapınız"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-91"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-92"
+                    }
+                  ],
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != ''",
+                      "errMessage": "Model cannot be null."
+                    }
+                  ],
+                  "visible": true
+                },
+                {
+                  "name": "androidImei",
+                  "title": "Android imei",
+                  "type": "string",
+                  "value": "selectedRow.imeiAndroid",
+                  "placeholder": "xx-xx-xx-xx",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidMac",
+                  "title": "Android mac",
+                  "type": "string",
+                  "value": "selectedRow.macAndroid",
+                  "placeholder": "xx-xx-xx-xx",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemImei",
+                  "title": "Modem imei",
+                  "type": "string",
+                  "value": "selectedRow.imeimodem",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemMac",
+                  "title": "Modem mac",
+                  "type": "string",
+                  "value": "selectedRow.macmodem",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcImei",
+                  "title": "Plc imei",
+                  "type": "string",
+                  "value": "selectedRow.imeiplc",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plc imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcMac",
+                  "title": "Plc mac",
+                  "type": "string",
+                  "value": "selectedRow.macplc",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plc mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                }
+              ]
+            },
+            "delete": {
+              "url": "http://localhost:44350/production/delete-automat",
+              "method": "POST",
+              "data": {
+                "manufactIds": [
+                  "selectedRow.manufactId"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "custom",
+          "content": "<div class=\"w-full flex justify-beetween items-center mt-4\">\n                    <div class=\"w-full flex items-center gap-8\">\n                    <h1 class=\"text-2xl font-bold text-second dark:text-white\">{{$t(\"datatablesPage.title3\")}}</h1>\n                    </div>\n                </div>"
+        },
+        {
+          "type": "datatable",
+          "containerClass": "w-full",
+          "id": "createdAutomatTable2",
+          "name": "createdAutomatTable2",
+          "columns": [
+            {
+              "order": 0,
+              "name": "plate",
+              "title": "Plate",
+              "checkable": false,
+              "orderable": false
+            },
+            {
+              "order": 1,
+              "name": "model",
+              "title": "Model",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 2,
+              "name": "imeiAndroid",
+              "title": "Android Imei",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 3,
+              "name": "macAndroid",
+              "title": "Android Mac",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 4,
+              "name": "imeimodem",
+              "title": "Modem Imei",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 5,
+              "name": "macmodem",
+              "title": "Modem Mac",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 6,
+              "name": "imeiplc",
+              "title": "PLC Imei",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 7,
+              "name": "macplc",
+              "title": "PLC Mac",
+              "checkable": true,
+              "orderable": false
+            },
+            {
+              "order": 8,
+              "name": null,
+              "title": "Test",
+              "checkable": true,
+              "orderable": false
+            }
+          ],
+          "filters": {
+            "data": [
+              {
+                "data": "plate",
+                "name": "datatablesPage.table3.plate",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "model",
+                "name": "Model",
+                "type": "select2",
+                "options": {
+                  "width": "100%",
+                  "minimumInputLength": -1,
+                  "placeholder": "Model Selection",
+                  "allowClear": true,
+                  "language": {
+                    "noResults": "Eşleşen bir Model bulunamadı.",
+                    "inputTooShort": "En az 1 Karakter giriniz.",
+                    "searching": "Aranıyor..."
+                  },
+                  "ajax": {
+                    "url": "http://localhost:44350/production/get-models",
+                    "delay": 250,
+                    "type": "POST",
+                    "dataType": "json",
+                    "contentType": "application/json; charset=utf-8"
+                  }
+                },
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "androidImei",
+                "name": "Android Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "androidMac",
+                "name": "Android Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "modemImei",
+                "name": "Modem Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "modemMac",
+                "name": "Modem Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "plcImei",
+                "name": "PLC Imei",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              },
+              {
+                "data": "plcMac",
+                "name": "PLC Mac",
+                "type": "text",
+                "value": null,
+                "default": null,
+                "visible": true
+              }
+            ]
+          },
+          "ajax": {
+            "url": "http://localhost:44350/production/get-manufacts",
+            "method": "POST",
+            "data": [
+              {
+                "name": "changedCells",
+                "value": "$('#showChangedCells').is(':checked') && $('#showChangedCells').is(':visible')  ?  createdAutomatTableCellUpdates.map(item => (item.id)) : null"
+              },
+              {
+                "name": "forTest",
+                "value": 4
+              }
+            ]
+          },
+          "serverSide": true,
+          "tableOptions": {
+            "order": false
+          },
+          "options": {
+            "customButtons": [
+              {
+                "html": "<i class='fa-solid fa-arrows-rotate text-xl'></i>",
+                "id": "refreshTableButton",
+                "title": "Yenile"
+              }
+            ],
+            "rowSelect": false,
+            "multiRowSelect": true,
+            "showSelectedRows": {
+              "dataName": "selectedRows",
+              "targetData": "manufactId"
+            },
+            "rightClick": [
+              {
+                "name": "datatablesPage.table3.contextMenu.edit"
+              },
+              {
+                "name": "datatablesPage.table3.contextMenu.delete"
+              },
+              {
+                "name": "datatablesPage.table3.contextMenu.test"
+              }
+            ],
+            "footerColumns": [
+              {
+                "column": 0,
+                "colspan": 2
+              },
+              {
+                "column": 3,
+                "colspan": 3
+              }
+            ]
+          },
+          "operations": {
+            "add": {
+              "title": "datatablesPage.table3.add",
+              "url": "http://localhost:44350/production/set-automat",
+              "method": "POST",
+              "data": [
+                {
+                  "name": "plaka",
+                  "title": "datatablesPage.table3.plate",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xxx-xx-xxx",
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plate must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 14
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "model",
+                  "title": "datatablesPage.table3.model",
+                  "type": "select",
+                  "required": true,
+                  "options": [
+                    {
+                      "value": "",
+                      "label": "Seçim yapınız"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-91"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-92"
+                    }
+                  ],
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != ''",
+                      "errMessage": "Model cannot be null."
+                    }
+                  ],
+                  "visible": true
+                },
+                {
+                  "name": "serialNumber",
+                  "title": "Serial number",
+                  "type": "number",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xxxxxxxxxxx",
+                  "showAllErrors": true,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 7",
+                      "errMessage": "Serial number must be longer than 7 characters."
+                    },
+                    {
+                      "control": "return !value.startsWith('000')",
+                      "errMessage": "Serial number cannot start with 000."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 14,
+                    "bannedKeys": [
+                      "68-90",
+                      32
+                    ]
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidImei",
+                  "title": "Android imei",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xx-xx-xx-xx",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidMac",
+                  "title": "Android mac",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "placeholder": "xx-xx-xx-xx",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemImei",
+                  "title": "Modem imei",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemMac",
+                  "title": "Modem mac",
+                  "type": "string",
+                  "required": true,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcImei",
+                  "title": "Plc imei",
+                  "type": "string",
+                  "required": false,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value == '' || value.length > 4;",
+                      "errMessage": "Plc imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcMac",
+                  "title": "Plc mac",
+                  "type": "string",
+                  "required": false,
+                  "value": "",
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return !value.startsWith('000')",
+                      "errMessage": "Serial number cannot start with 000."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "defaultData",
+                  "value": true,
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": false
+                }
+              ]
+            },
+            "edit": {
+              "title": "datatablesPage.table3.edit",
+              "url": "http://localhost:44350/production/update-automat",
+              "method": "POST",
+              "data": [
+                {
+                  "name": "manufactId",
+                  "value": "selectedRow.manufactId",
+                  "visible": false
+                },
+                {
+                  "name": "plaka",
+                  "value": "selectedRow.plate",
+                  "visible": false
+                },
+                {
+                  "name": "serialNumber",
+                  "value": "selectedRow.snAndroid",
+                  "visible": false
+                },
+                {
+                  "name": "model",
+                  "title": "datatablesPage.table3.model",
+                  "type": "select",
+                  "value": "selectedRow.modelID",
+                  "options": [
+                    {
+                      "value": "",
+                      "label": "Seçim yapınız"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-91"
+                    },
+                    {
+                      "value": "CD636047-CE35-43D4-A82D-AF0943BB63BE",
+                      "label": "AA-92"
+                    }
+                  ],
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != ''",
+                      "errMessage": "Model cannot be null."
+                    }
+                  ],
+                  "visible": true
+                },
+                {
+                  "name": "androidImei",
+                  "title": "Android imei",
+                  "type": "string",
+                  "value": "selectedRow.imeiAndroid",
+                  "placeholder": "xx-xx-xx-xx",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "androidMac",
+                  "title": "Android mac",
+                  "type": "string",
+                  "value": "selectedRow.macAndroid",
+                  "placeholder": "xx-xx-xx-xx",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Android mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemImei",
+                  "title": "Modem imei",
+                  "type": "string",
+                  "value": "selectedRow.imeimodem",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "modemMac",
+                  "title": "Modem mac",
+                  "type": "string",
+                  "value": "selectedRow.macmodem",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Modem mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcImei",
+                  "title": "Plc imei",
+                  "type": "string",
+                  "value": "selectedRow.imeiplc",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plc imei must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                },
+                {
+                  "name": "plcMac",
+                  "title": "Plc mac",
+                  "type": "string",
+                  "value": "selectedRow.macplc",
+                  "required": true,
+                  "showAllErrors": false,
+                  "errorChecks": [
+                    {
+                      "control": "return value != null && value != '' && value.length > 4;",
+                      "errMessage": "Plc mac must be longer than 4 characters."
+                    }
+                  ],
+                  "keydown": {
+                    "maxLength": 10
+                  },
+                  "visible": true
+                }
+              ]
+            },
+            "delete": {
+              "url": "http://localhost:44350/production/delete-automat",
+              "method": "POST",
+              "data": {
+                "manufactIds": "selectedRow.manufactId"
+              }
+            }
+          }
+        },
+        {
+          "type": "custom",
+          "content": "<div id=\"changesModal\" class=\"fixed bottom-0 flex-col justify-center items-center gap-2 w-[400px] px-8 py-4 max-w-full bg-bg text-darkBg rounded-t-lg\">\n                    <div class=\"w-full flex justify-center items-center gap-4 text-sm\"><input id=\"showChangedCells\" type=\"checkbox\" /><span>Show changed cells</span></div>\n                    <div class=\"flex flex-col justify-center items-center gap-8\">\n                    <h1 class=\"text-2xl font-bold\">Some changes were noticed</h1>\n                    <div class=\"flex gap-4 w-full\">\n                        <button @click=\"saveCellChanges\" class=\"w-1/2 px-4 py-2 bg-green-600 text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"datatablesPage.save\")}}</button>\n                        <button @click=\"cancelCellChanges\" class=\"w-1/2 px-4 py-2 bg-red-600 text-white shadow-md text-xl font-bold rounded-lg\">{{$t(\"datatablesPage.cancel\")}}</button>\n                    </div>\n                    </div>\n                </div>"
+        }
+      ],
+      "scopedCss": "\n    #changesModal { \n        display:none;     \n    }\n    #changesModal.show { \n        display:flex;     \n    }\n",
+      "customScripts": " \nimport { toast } from \"vue3-toastify\";\nvar createdAutomatTableCellUpdates = [];\nfunction add2UpdatedCells(name, id, value, rowData) { \n    document.getElementById('changesModal').classList.add('show');\n    $('#showChangedCells').attr('checked', false);\n    let index = createdAutomatTableCellUpdates.findIndex(x => x.name == name && x.id == id);\n    if (index == -1) {\n        createdAutomatTableCellUpdates.push({ name: name, id: id, value: value, rowData: rowData });\n    }\n    else {\n        createdAutomatTableCellUpdates[index].value = value;\n    }\n}\nfunction remove2UpdatedCells(name, id) { \n    let index = createdAutomatTableCellUpdates.findIndex(x => x.name == name && x.id == id);\n    if (index != -1) {\n        createdAutomatTableCellUpdates.splice(index, 1);\n    }\n\n    if (createdAutomatTableCellUpdates.length == 0) {\n        document.getElementById('changesModal').classList.remove('show');\n    }\n}\nfunction saveCellChanges() { \n    console.log(createdAutomatTableCellUpdates[0].rowData);\n    let data = {\n        manufactId: createdAutomatTableCellUpdates[0].id,\n        plaka: createdAutomatTableCellUpdates[0].rowData.plate,\n        model: createdAutomatTableCellUpdates[0].rowData.model,\n        androidMac: createdAutomatTableCellUpdates[0].rowData.macAndroid,\n        androidImei: createdAutomatTableCellUpdates[0].rowData.imeiAndroid,\n        modemImei: createdAutomatTableCellUpdates[0].rowData.imeimodem,\n        modemMac: createdAutomatTableCellUpdates[0].rowData.macmodem,\n        plcImei: createdAutomatTableCellUpdates[0].rowData.imeiplc,\n        plcMac: createdAutomatTableCellUpdates[0].rowData.macplc,\n        serialNumber: createdAutomatTableCellUpdates[0].rowData.snAndroid\n    };\n    data[createdAutomatTableCellUpdates[0].name] = createdAutomatTableCellUpdates[0].value;\n    $.ajax({\n        url: \"http://localhost:44350/production/update-automat\",\n        method: \"POST\",\n        data: data,\n        success: function (response) {\n            toast.success(response.description || \"İşlem başarılı\");\n            createdAutomatTableCellUpdates = [];\n            createdAutomatTable.ajax.reload(null, false);\n            document.getElementById('changesModal').classList.remove('show');\n        },\n        error: function (xhr, status, error) {\n            console.log(error);\n        }\n    });\n}\nfunction cancelCellChanges() {\n    createdAutomatTableCellUpdates = [];\n    document.getElementById('changesModal').classList.remove('show');\n    createdAutomatTable.ajax.reload(null, false);\n}\nfunction dateTrFormat(data) {\n    let options = { timeZone: 'Europe/Istanbul', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };\n    let formattedDate = new Date(data).toLocaleString('tr-TR', options);\n    return formattedDate;\n}\n",
+      "customReadyScripts": "\n$('#showChangedCells').on('change', function () {\n    createdAutomatTable.ajax.reload();\n});\n",
+      "help": {
+        "page": "Datatables Page",
+        "info": "In this page, you can see example datatables. There are two datatables in this page and both have filtering. Second datatable has operations (add, edit, delete) and right-click context menu. If you want delete or edit a row, first you click on the row to select it, then click on the edit or delete button above the datatable",
+        "shortcuts": [
+          {
+            "shortcut": [
+              {
+                "key": "/images/ctrl_key.png"
+              },
+              {
+                "key": "/images/letter_k.png"
+              }
+            ],
+            "shortcutDescription": "Example shortcut description."
+          },
+          {
+            "shortcut": [
+              {
+                "key": "/images/esc_key.png"
+              }
+            ],
+            "shortcutDescription": "For the cancel."
+          },
+          {
+            "shortcut": [
+              {
+                "key": "/images/right-click.png"
+              }
+            ],
+            "shortcutDescription": "In the second datatable, right click on the row to see the context menu."
+          }
+        ],
+        "link": null
+      },
+      "shortcuts": [
+        {
+          "keys": [
+            "ctrl",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "p"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "Cards.vue",
+      "name": "cards",
+      "path": "/cards",
+      "icon": "fa-solid fa-cart-shopping",
+      "seo": {
+        "title": "cardsPage.seo.title",
+        "description": "cardsPage.seo.description",
+        "keywords": [
+          "cardsPage.seo.keywords1",
+          "cardsPage.seo.keywords2",
+          "cardsPage.seo.keywords3",
+          "cardsPage.seo.keywords4"
+        ]
+      },
+      "pageCss": "w-full flex flex-col justify-center items-center gap-8",
+      "doms": [
+        {
+          "type": "cards",
+          "containerClass": "w-full",
+          "id": "shoppingCards",
+          "name": "shoppingCards",
+          "ajax": {
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "dataType": "json",
+            "contentType": "application/json",
+            "stringifyData": true
+          },
+          "paging": {
+            "type": 0,
+            "size": 10
+          },
+          "ordering": {
+            "name": "orderType",
+            "options": [
+              {
+                "name": "aToZ",
+                "id": "aToZ",
+                "value": 1
+              },
+              {
+                "name": "lowestPrice",
+                "id": "lowestPrice",
+                "value": 2
+              },
+              {
+                "name": "highestPrice",
+                "id": "highestPrice",
+                "value": 3
+              }
+            ]
+          },
+          "searchBar": {
+            "name": "searchValue",
+            "placeholder": "cardsPage.card1.searchPlaceholder",
+            "delay": 300
+          },
+          "filters": [
+            {
+              "data": "category",
+              "name": "cardsPage.card1.category",
+              "type": "select2",
+              "options": {
+                "width": "100%",
+                "minimumInputLength": -1,
+                "placeholder": "cardsPage.card1.categorySelection",
+                "allowClear": true,
+                "language": {
+                  "noResults": "Eşleşen bir Kategori bulunamadı.",
+                  "inputTooShort": "En az 1 Karakter giriniz.",
+                  "searching": "Aranıyor..."
+                },
+                "ajax": {
+                  "url": "http://localhost:3000/categories",
+                  "delay": 250,
+                  "type": "GET",
+                  "dataType": "json",
+                  "contentType": "application/json; charset=utf-8"
+                }
+              },
+              "value": null,
+              "default": null,
+              "visible": true
+            },
+            {
+              "data": "brand",
+              "name": "cardsPage.card1.brand",
+              "type": "text",
+              "value": null,
+              "default": null,
+              "visible": true
+            }
+          ],
+          "cardLayout": {
+            "type": 2,
+            "card": {
+              "id": "ID",
+              "title": "UrunAdi",
+              "img": "Resimler[0]",
+              "envanter": "Envanter",
+              "barcode": "Barkodlar[0].Barkodu",
+              "price": "Tutar",
+              "brand": "UreticiFirmaAdi",
+              "category": "Kategori"
+            },
+            "viewMode": {
+              "changeable": true,
+              "default": "grid"
+            }
+          }
+        },
+        {
+          "type": "custom",
+          "content": "<hr class=\"my-4 w-full border-second border dark:border-bg\"/>"
+        },
+        {
+          "type": "cards",
+          "containerClass": "w-full",
+          "id": "shoppingCards2",
+          "name": "shoppingCards2",
+          "ajax": {
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "dataType": "json",
+            "contentType": "application/json",
+            "stringifyData": true
+          },
+          "paging": {
+            "type": 0,
+            "size": 12
+          },
+          "ordering": {
+            "name": "orderType",
+            "options": [
+              {
+                "name": "aToZ",
+                "id": "aToZ",
+                "value": 1
+              },
+              {
+                "name": "lowestPrice",
+                "id": "lowestPrice",
+                "value": 2
+              },
+              {
+                "name": "highestPrice",
+                "id": "highestPrice",
+                "value": 3
+              }
+            ]
+          },
+          "searchBar": {
+            "name": "searchValue",
+            "placeholder": "cardsPage.card2.searchPlaceholder",
+            "delay": 300
+          },
+          "filters": [
+            {
+              "data": "category",
+              "name": "cardsPage.card2.category",
+              "type": "select2",
+              "options": {
+                "width": "100%",
+                "minimumInputLength": -1,
+                "placeholder": "cardsPage.card2.categorySelection",
+                "allowClear": true,
+                "language": {
+                  "noResults": "Eşleşen bir Kategori bulunamadı.",
+                  "inputTooShort": "En az 1 Karakter giriniz.",
+                  "searching": "Aranıyor..."
+                },
+                "ajax": {
+                  "url": "http://localhost:3000/categories",
+                  "delay": 250,
+                  "type": "GET",
+                  "dataType": "json",
+                  "contentType": "application/json; charset=utf-8"
+                }
+              },
+              "value": null,
+              "default": null,
+              "visible": true
+            },
+            {
+              "data": "brand",
+              "name": "cardsPage.card2.brand",
+              "type": "text",
+              "value": null,
+              "default": null,
+              "visible": true
+            }
+          ],
+          "cardLayout": {
+            "type": 3,
+            "card": {
+              "id": "ID",
+              "title": "UrunAdi",
+              "img": "Resimler[0]",
+              "envanter": "Envanter",
+              "barcode": "Barkodlar[0].Barkodu",
+              "price": "Tutar",
+              "brand": "UreticiFirmaAdi",
+              "category": "Kategori"
+            },
+            "viewMode": {
+              "changeable": true,
+              "default": "list"
+            }
+          }
+        }
+      ],
+      "help": {
+        "page": "Cards Page",
+        "info": "In this page, you can see example cards. There are two cards in this page and both have filtering & sorting. First card is in grid view and second card is in list view. You can change the view mode by clicking on the button on the top right corner of the card.",
+        "shortcuts": null,
+        "link": null
+      }
+    }
+  ],
+  "contents": {
+    "splashDefaultContent": "<img src=\"/images/loading.gif\" />"
+  },
+  "scripts": [
+    {
+      "name": "shared",
+      "pages": [
+        {
+          "name": "introduction",
+          "import": "{ sharedFunctions }"
+        },
+        {
+          "name": "configuration",
+          "import": "{ sharedFunctions }"
+        },
+        {
+          "name": "examples",
+          "import": "{ sharedFunctions }"
+        }
+      ],
+      "script": "\n      import siteData from '../../../siteData.json'\n      import commonFunctions from '../common';\n      const sharedFunctions = {\n          getPageByPath: function(path) {\n              const currentPageJson = siteData.pages.find(x => x.path == path);\n              const formatted = JSON.stringify(currentPageJson, null, 2).replace(/</g, \"&lt;\").replace(/>/g, \"&gt;\");\n              let modalHtml = '<pre class=\"bg-darkBg text-bg p-4 rounded-sm font-mono text-sm whitespace-pre-wrap\">' + formatted + '</pre>'\n              commonFunctions.openModal(500, 600, modalHtml);\n          }\n      }\n      export { sharedFunctions }\n    "
+    }
+  ]
+}

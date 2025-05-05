@@ -1,0 +1,36 @@
+{
+    "simple":{
+        "typeId": 1,
+        "requiredData": {
+            "id": "String",
+            "title": "String",
+            "img": "String",
+            "barcode": "String",
+            "price": "Number"
+        } 
+    },
+    "withBasket": {
+        "typeId": 2,
+        "requiredData": {
+            "id": "String",
+            "title": "String",
+            "img": "String",
+            "envanter": "Number",
+            "barcode": "String",
+            "price": "Number"
+        } 
+    },
+    "detailCard": {
+        "typeId": 3,
+        "requiredData": {
+            "id": "String",
+            "title": "String",
+            "img": "String",
+            "envanter": "Number",
+            "barcode": "String",
+            "price": "Number",
+            "brand": "String",
+            "category": "String"
+        } 
+    }
+}

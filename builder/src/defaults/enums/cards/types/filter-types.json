@@ -1,0 +1,62 @@
+{
+    "text": {
+        "type": "text",
+        "data": "exampleData",
+        "name": "exampleName",
+        "value": null,
+        "default": null,
+        "visible": true
+    },
+    "select": {
+        "type": "select",
+        "data": "exampleData",
+        "name": "exampleName",
+        "value": null,
+        "default": null,
+        "visible": true,
+        "options": [
+            {
+                "value": "1",
+                "label": "exampleOption"
+            },
+            {
+                "value": "2",
+                "label": "exampleOption2"
+            }
+        ]
+    },
+    "select2": {
+        "type": "selec2",
+        "data": "exampleData",
+        "name": "exampleName",
+        "value": null,
+        "default": null,
+        "visible": true,
+        "options": {
+            "width": "100%",
+            "minimumInputLength": -1,
+            "placeholder": "cardsPage.card1.categorySelection",
+            "allowClear": true,
+            "language": {
+                "noResults": "Eşleşen bir Kategori bulunamadı.",
+                "inputTooShort": "En az 1 Karakter giriniz.",
+                "searching": "Aranıyor..."
+            },
+            "ajax": {
+                "url": "http://localhost:3000/categories",
+                "delay": 250,
+                "type": "GET",
+                "dataType": "json",
+                "contentType": "application/json; charset=utf-8"
+            }
+        }
+    },
+    "check": {
+        "data": "exampleData",
+        "name": "exampleName",
+        "type": "check",
+        "value": false,
+        "default": false,
+        "visible": true
+    }
+}

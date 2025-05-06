@@ -11,7 +11,8 @@ const siteData = {
   "languages": languages,
   "pages": pages,
   "contents": contents,
-  "scripts": scripts
+  "scripts": scripts,
+  // "users" users
 };
 
 module.exports = siteData;

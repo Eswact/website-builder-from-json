@@ -1,4 +1,5 @@
 builder/node_modules
+builder/.env
 
 json-website/logs
 json-website/*.log
@@ -24,3 +25,5 @@ json-website/*.sln
 json-website/*.sw?
 
 test-backend/node_modules
+test-backend/uploads
+test-backend/.env

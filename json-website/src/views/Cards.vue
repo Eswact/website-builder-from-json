@@ -272,7 +272,7 @@ const basketStore = useBasketStore();
  const shoppingCardsOrderOptions = ref([{"name":"aToZ","id":"aToZ","value":1},{"name":"lowestPrice","id":"lowestPrice","value":2},{"name":"highestPrice","id":"highestPrice","value":3}]);
  const shoppingCardsOrderModalVisibility = ref(false);
       const shoppingCardsSearchBar = ref('');
-      const shoppingCardsFilters = [{"data":"category","name":"cardsPage.card1.category","type":"select2","options":{"width":"100%","minimumInputLength":-1,"placeholder":"cardsPage.card1.categorySelection","allowClear":true,"language":{"noResults":"Eşleşen bir Kategori bulunamadı.","inputTooShort":"En az 1 Karakter giriniz.","searching":"Aranıyor..."},"ajax":{"url":"http://localhost:3000/categories","delay":250,"type":"GET","dataType":"json","contentType":"application/json; charset=utf-8"}},"value":null,"default":null,"visible":true},{"data":"brand","name":"cardsPage.card1.brand","type":"text","value":null,"default":null,"visible":true}];
+      const shoppingCardsFilters = [{"data":"category","name":"cardsPage.card1.category","type":"select2","options":{"width":"100%","minimumInputLength":-1,"placeholder":"cardsPage.card1.categorySelection","allowClear":true,"language":{"noResults":"Eşleşen bir Kategori bulunamadı.","inputTooShort":"En az 1 Karakter giriniz.","searching":"Aranıyor..."},"ajax":{"url":"http://localhost:3000/api/categories","delay":250,"type":"GET","dataType":"json","contentType":"application/json; charset=utf-8"}},"value":null,"default":null,"visible":true},{"data":"brand","name":"cardsPage.card1.brand","type":"text","value":null,"default":null,"visible":true}];
       const shoppingCardsFiltersData = ref({category: null,brand: null}) 
       const shoppingCardsCurrentPage = ref(1);
 const shoppingCardsTotalPages = ref(1);
@@ -290,7 +290,7 @@ const shoppingCardsTotalPages = ref(1);
         };
   
         $.ajax({
-          url: "http://localhost:3000/products",
+          url: "http://localhost:3000/api/products",
           type: "POST",
           dataType: "json",
           contentType: "application/json",
@@ -349,7 +349,7 @@ const shoppingCardsTotalPages = ref(1);
  const shoppingCards2OrderOptions = ref([{"name":"aToZ","id":"aToZ","value":1},{"name":"lowestPrice","id":"lowestPrice","value":2},{"name":"highestPrice","id":"highestPrice","value":3}]);
  const shoppingCards2OrderModalVisibility = ref(false);
       const shoppingCards2SearchBar = ref('');
-      const shoppingCards2Filters = [{"data":"category","name":"cardsPage.card2.category","type":"select2","options":{"width":"100%","minimumInputLength":-1,"placeholder":"cardsPage.card2.categorySelection","allowClear":true,"language":{"noResults":"Eşleşen bir Kategori bulunamadı.","inputTooShort":"En az 1 Karakter giriniz.","searching":"Aranıyor..."},"ajax":{"url":"http://localhost:3000/categories","delay":250,"type":"GET","dataType":"json","contentType":"application/json; charset=utf-8"}},"value":null,"default":null,"visible":true},{"data":"brand","name":"cardsPage.card2.brand","type":"text","value":null,"default":null,"visible":true}];
+      const shoppingCards2Filters = [{"data":"category","name":"cardsPage.card2.category","type":"select2","options":{"width":"100%","minimumInputLength":-1,"placeholder":"cardsPage.card2.categorySelection","allowClear":true,"language":{"noResults":"Eşleşen bir Kategori bulunamadı.","inputTooShort":"En az 1 Karakter giriniz.","searching":"Aranıyor..."},"ajax":{"url":"http://localhost:3000/api/categories","delay":250,"type":"GET","dataType":"json","contentType":"application/json; charset=utf-8"}},"value":null,"default":null,"visible":true},{"data":"brand","name":"cardsPage.card2.brand","type":"text","value":null,"default":null,"visible":true}];
       const shoppingCards2FiltersData = ref({category: null,brand: null}) 
       const shoppingCards2CurrentPage = ref(1);
 const shoppingCards2TotalPages = ref(1);
@@ -367,7 +367,7 @@ const shoppingCards2TotalPages = ref(1);
         };
   
         $.ajax({
-          url: "http://localhost:3000/products",
+          url: "http://localhost:3000/api/products",
           type: "POST",
           dataType: "json",
           contentType: "application/json",

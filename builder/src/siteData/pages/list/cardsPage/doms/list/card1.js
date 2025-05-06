@@ -4,7 +4,7 @@ const dom = {
     "id": "shoppingCards",
     "name": "shoppingCards",
     "ajax": {
-        "url": "http://localhost:3000/products",
+        "url": "http://localhost:3000/api/products",
         "method": "POST",
         "dataType": 'json',
         "contentType": 'application/json',
@@ -55,7 +55,7 @@ const dom = {
                     "searching": "Aranıyor..."
                 },
                 "ajax": {
-                    "url": `http://localhost:3000/categories`,
+                    "url": `http://localhost:3000/api/categories`,
                     "delay": 250,
                     "type": 'GET',
                     "dataType": 'json',

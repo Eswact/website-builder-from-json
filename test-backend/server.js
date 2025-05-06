@@ -1,69 +1,57 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require('path');
+const cookieSession = require('cookie-session');
+require("dotenv").config();
+
 const app = express();
-const port = 3000;
 
-const products = require("./products.json");
-const categories = require("./categories.json");
+const corsOptions = {
+  origin: ['http://localhost:3752'],
+  credentials: true
+};
+app.use(cors(corsOptions));
 
-function normalizeString(str) {
-  return str
-    .toLocaleLowerCase("tr")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors());
-app.use(express.json());
+// show uploads static file
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.post("/products", (req, res) => {
-  // console.log(req.body);
-  let { searchValue, orderType, filters = {}, currentPage = 1, itemsPerPage = 10 } = req.body;
+// set port & listen
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
 
-  let filteredProducts = [...products];
-
-  // Filtreleme
-  if (filters.category) {
-    filteredProducts = filteredProducts.filter((product) => product.Kategori === filters.category);
-  }
-  if (filters.brand) {
-    filteredProducts = filteredProducts.filter((product) => normalizeString(product.UreticiFirmaAdi).includes(normalizeString(filters.brand)));
-  }
-
-  // Arama
-  if (searchValue) {
-    filteredProducts = filteredProducts.filter((product) =>
-      product.UrunAdi.toLowerCase().includes(searchValue.toLowerCase())
-    );
-  }
-
-  // Sıralama
-  if (orderType === 1) {
-    filteredProducts.sort((a, b) => a.UrunAdi.localeCompare(b.UrunAdi));
-  } else if (orderType === 2) {
-    filteredProducts.sort((a, b) => a.Tutar - b.Tutar);
-  } else if (orderType === 3) {
-    filteredProducts.sort((a, b) => b.Tutar - a.Tutar);
-  }
-
-  // **Paging İşlemi**
-  const totalItems = filteredProducts.length;
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const pagedProducts = filteredProducts.slice(startIndex, startIndex + itemsPerPage);
-
-  res.json({
-    totalItems,
-    totalPages: Math.ceil(totalItems / itemsPerPage),
-    currentPage,
-    itemsPerPage,
-    data: pagedProducts,
+// db connection
+const db = require("./app/models");
+db.mongoose
+  .connect(db.url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    console.log("Connected to the database!");
+  })
+  .catch(err => {
+    console.log("Cannot connect to the database!", err);
+    process.exit();
   });
-});
 
-app.get("/categories", (req, res) => {
-  res.json(categories);
-});
+// cookie-session
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: [process.env.SESSION_SECRET],
+    maxAge: 60 * 60 * 1000,
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+  })
+);
 
-app.listen(port, () => {
-  console.log(`Server ${port} portunda çalışıyor...`);
-});
+// route
+app.get("/", (req, res) => { res.json({ message: "Welcome to Server." }); });
+app.use("/api", require("./app/routes/index.js"));

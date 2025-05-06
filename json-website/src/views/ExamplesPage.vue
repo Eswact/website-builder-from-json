@@ -253,7 +253,7 @@ const shoppingCardsTotalPages = ref(1);
         };
   
         $.ajax({
-          url: "http://localhost:3000/products",
+          url: "http://localhost:3000/api/products",
           type: "POST",
           dataType: "json",
           contentType: "application/json",

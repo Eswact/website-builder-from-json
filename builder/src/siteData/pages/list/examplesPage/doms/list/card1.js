@@ -4,7 +4,7 @@ const dom = {
     "id": "shoppingCards",
     "name": "shoppingCards",
     "ajax": {
-        "url": "http://localhost:3000/products",
+        "url": "http://localhost:3000/api/products",
         "method": "POST",
         "dataType": 'json',
         "contentType": 'application/json',

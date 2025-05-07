@@ -5,6 +5,7 @@ import pagesData from '../../siteData.json';
 import { useHelpStore } from '../store/pageHelper';
 import DarkModeToggle from './DarkModeToggle.vue';
 import LanguageToggle from './LanguageToggle.vue';
+import UserToggle from './UserToggle.vue';
 
 const helpStore = useHelpStore();
 
@@ -22,6 +23,7 @@ const closeNavbar = () => {
 
 const darkModeEnabled = (pagesData.theme.darkModeEnabled == true || pagesData.theme.darkModeEnabled == 'true');
 const languagesEnabled = (pagesData.languages.options.length > 1);
+const userEnabled = (pagesData.users.active);
 </script>
 
 <template>
@@ -74,6 +76,7 @@ const languagesEnabled = (pagesData.languages.options.length > 1);
         <div class="flex gap-[34px] md:gap-[20px] items-center justify-end">
           <LanguageToggle v-if="languagesEnabled" />
           <DarkModeToggle v-if="darkModeEnabled" />
+          <UserToggle v-if="userEnabled" />
           <!-- Settings Button -->
           <!-- Logout Button -->
         </div>

@@ -7,7 +7,6 @@ const languages = {
         {
             "code": "en",
             "label": "English",
-            // defaults
             "data": en,
         },
         {

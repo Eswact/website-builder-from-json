@@ -37,7 +37,10 @@
             "lengthMenu": "Sayfada _MENU_ kayıt göster",
             "zeroRecords": "Tablo Boş.",
             "infoFiltered": "(toplam _MAX_ kayıttan filtrelenenler)"
-        }
+        },
+        "login": "Giriş yap",
+        "logout": "Çıkış",
+        "register": "Kayıt ol"
     },
 
     "introduction": "Anasayfa",

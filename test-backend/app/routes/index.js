@@ -4,7 +4,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 const router = express.Router();
 // const authMiddleware = require('../middlewares/auth-middleware');
-// const userRoutes = require("./user-routes");
+const userRoutes = require("./user-routes");
 const productRoutes = require("./product-routes");
 
 const methodHandler = {
@@ -35,6 +35,6 @@ const addRoutes = (routes, basePath = '', middleware = null) => {
 };
 
 addRoutes(productRoutes, '');
-// addRoutes(userRoutes, '/user');
+addRoutes(userRoutes, '/user');
 
 module.exports = router;

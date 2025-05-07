@@ -36,5 +36,8 @@
         "lengthMenu": "Show _MENU_ entries",
         "zeroRecords": "Table Empty.",
         "infoFiltered": "(filtered from _MAX_ total entries)"
-    }
+    },
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register"
 }

@@ -79,7 +79,10 @@
               "lengthMenu": "Show _MENU_ entries",
               "zeroRecords": "Table Empty.",
               "infoFiltered": "(filtered from _MAX_ total entries)"
-            }
+            },
+            "login": "Login",
+            "logout": "Logout",
+            "register": "Register"
           },
           "introduction": "Introduction",
           "configuration": "Configuration",
@@ -296,7 +299,10 @@
               "lengthMenu": "Sayfada _MENU_ kayıt göster",
               "zeroRecords": "Tablo Boş.",
               "infoFiltered": "(toplam _MAX_ kayıttan filtrelenenler)"
-            }
+            },
+            "login": "Giriş yap",
+            "logout": "Çıkış",
+            "register": "Kayıt ol"
           },
           "introduction": "Anasayfa",
           "configuration": "Yapılandırma",
@@ -2282,5 +2288,114 @@
       ],
       "script": "\n      import siteData from '../../../siteData.json'\n      import commonFunctions from '../common';\n      const sharedFunctions = {\n          getPageByPath: function(path) {\n              const currentPageJson = siteData.pages.find(x => x.path == path);\n              const formatted = JSON.stringify(currentPageJson, null, 2).replace(/</g, \"&lt;\").replace(/>/g, \"&gt;\");\n              let modalHtml = '<pre class=\"bg-darkBg text-bg p-4 rounded-sm font-mono text-sm whitespace-pre-wrap\">' + formatted + '</pre>'\n              commonFunctions.openModal(500, 600, modalHtml);\n          }\n      }\n      export { sharedFunctions }\n    "
     }
-  ]
+  ],
+  "users": {
+    "active": true,
+    "cookieSession": true,
+    "cookieSessionControlUrl": "http://localhost:3000/api/user/auth-control",
+    "defaultUsers": [],
+    "login": {
+      "url": "http://localhost:3000/api/user/login",
+      "method": "POST",
+      "data": [
+        {
+          "visible": true,
+          "required": true,
+          "name": "mail",
+          "title": "Email",
+          "id": "userLoginMail",
+          "type": "email",
+          "placeholder": "example@mail.com",
+          "value": "",
+          "default": ""
+        },
+        {
+          "visible": true,
+          "required": true,
+          "name": "password",
+          "title": "Password",
+          "id": "userLoginPassword",
+          "type": "password",
+          "placeholder": "**********",
+          "errorChecks": [
+            {
+              "control": "return value != null && value != '' && value.length > 7;",
+              "errMessage": "Plate must be longer than 7 characters."
+            }
+          ],
+          "keydown": {
+            "maxLength": 14
+          },
+          "value": "",
+          "default": ""
+        }
+      ]
+    },
+    "logout": {
+      "url": "http://localhost:3000/api/user/logout",
+      "method": "POST"
+    },
+    "register": {
+      "url": "http://localhost:3000/api/user/register",
+      "method": "POST",
+      "data": [
+        {
+          "visible": false,
+          "name": "role",
+          "value": 1
+        },
+        {
+          "visible": true,
+          "required": true,
+          "name": "mail",
+          "title": "Email",
+          "id": "userRegisterMail",
+          "type": "email",
+          "placeholder": "example@mail.com",
+          "value": "",
+          "default": ""
+        },
+        {
+          "visible": true,
+          "required": true,
+          "name": "username",
+          "title": "Username",
+          "id": "userRegisterUsername",
+          "type": "string",
+          "placeholder": "",
+          "errorChecks": [
+            {
+              "control": "return value != null && value != '' && value.length > 7;",
+              "errMessage": "Plate must be longer than 7 characters."
+            }
+          ],
+          "keydown": {
+            "maxLength": 14
+          },
+          "value": "",
+          "default": ""
+        },
+        {
+          "visible": true,
+          "required": true,
+          "name": "password",
+          "title": "Password",
+          "id": "userRegisterPassword",
+          "type": "password",
+          "placeholder": "············",
+          "errorChecks": [
+            {
+              "control": "return value != null && value != '' && value.length > 7;",
+              "errMessage": "Plate must be longer than 7 characters."
+            }
+          ],
+          "keydown": {
+            "maxLength": 14
+          },
+          "value": "",
+          "default": ""
+        }
+      ]
+    }
+  }
 }

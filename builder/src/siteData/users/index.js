@@ -6,7 +6,7 @@ const users = {
     "active": true,
     "cookieSession": true,
     "cookieSessionControlUrl": "http://localhost:3000/api/user/auth-control",
-    "defaultUsers": [],
+    "defaultUser": {},
     "login": login,
     "logout": logout,
     "register": register,

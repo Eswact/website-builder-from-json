@@ -34,6 +34,7 @@ const addRoutes = (routes, basePath = '', middleware = null) => {
     });
 };
 
+// addRoutes(routes, urlPrefix, middleware);
 addRoutes(productRoutes, '');
 addRoutes(userRoutes, '/user');
 

@@ -25,7 +25,7 @@ const userService = {
                 }
             }
             else {
-                registerData[item.name] = item.value;
+                loginData[item.name] = item.value;
             }
         });
     

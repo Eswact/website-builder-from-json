@@ -7,12 +7,12 @@ function closeModal() {
 }
 
 const beforeLogin = () => {
-          console.log('before login');
-          return true
-        };
+        console.log('before login');
+        return true
+    };
 const afterLogin = () => {
-          console.log('after login');
-        };
+        console.log('after login');
+    };
 async function loginProcess() {
     if (beforeLogin()) {
         const result = await userService.login();

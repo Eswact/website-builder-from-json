@@ -19,12 +19,12 @@
     });
 
     const beforeLogout = () => {
-          console.log('before logout');
-          return true
-        };
+        console.log('before logout');
+        return true
+    };
     const afterLogout = () => {
-          console.log('after logout');
-        };
+        console.log('after logout');
+    };
     async function logoutProcess() {
         dropdownOpen.value = false;
         if (beforeLogout()) {

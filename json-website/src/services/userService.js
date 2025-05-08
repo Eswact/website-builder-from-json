@@ -3,12 +3,13 @@ import $ from 'jquery';
 import { toast } from "vue3-toastify";
 import siteData from '../../siteData.json';
 import commonFunctions from '../scripts/common';
-import select2Service from './select2Service';
 import i18n from './languageService';
 const t = i18n.global.t;
 
 const userService = {
     authControl: ref(false),
+
+    // Actions
     login: async function() {
         const thisHelper = this;
         const loginData = {};
@@ -53,8 +54,28 @@ const userService = {
             toast.error(`Giriş başarısız: ${err.responseJSON?.message}`);
             return false;
         }
-    },    
-
+    },
+    logout: async function() {
+        const thisHelper = this;
+        try {
+            const response = await $.ajax({
+                url: siteData.users.logout.url,
+                method: siteData.users.logout.method,
+                xhrFields: { withCredentials: true },
+            });
+    
+            localStorage.removeItem('userToken');
+            thisHelper.authControl.value = false;
+            console.log('Çıkış yapıldı:', response);
+            toast.success('Çıkış yapıldı.');
+            return true;
+    
+        } catch (err) {
+            console.error('Çıkış yapılamadı:', err);
+            toast.error('Çıkış yapılamadı.');
+            return false;
+        }
+    },
     register: async function() {
         const registerData = {};
         let missingFields = [];
@@ -98,32 +119,7 @@ const userService = {
         }
     },
 
-    logout: async function() {
-        const thisHelper = this;
-        try {
-            const response = await $.ajax({
-                url: siteData.users.logout.url,
-                method: siteData.users.logout.method,
-                xhrFields: { withCredentials: true },
-            });
-    
-            localStorage.removeItem('userToken');
-            thisHelper.authControl.value = false;
-            console.log('Çıkış yapıldı:', response);
-            toast.success('Çıkış yapıldı.');
-            return true;
-    
-        } catch (err) {
-            console.error('Çıkış yapılamadı:', err);
-            toast.error('Çıkış yapılamadı.');
-            return false;
-        }
-    },
-
-    getToken: function() {
-        return localStorage.userToken;
-    },
-
+    // Controls
     isLoggedIn: async function() {
         const thisHelper = this;        
         if (localStorage.userToken) {
@@ -144,7 +140,11 @@ const userService = {
         }
         return false;
     },
+    getToken: function() {
+        return localStorage.userToken;
+    },
 
+    // Login-Register Modals
     fillLoginModal: function() { 
         let formHtml = '';
         siteData.users.login.data.forEach(item => {
@@ -198,7 +198,6 @@ const userService = {
         });
         this.inputControls(siteData.users.login);
     },
-
     fillRegisterModal: function() { 
         let formHtml = '';
         siteData.users.register.data.forEach(item => {
@@ -252,7 +251,6 @@ const userService = {
         });
         this.inputControls(siteData.users.register);
     },
-
     inputControls: function (op) {
         op.data.forEach(item => {
             if (item.visible) {

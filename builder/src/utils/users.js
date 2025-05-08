@@ -138,7 +138,6 @@ async function loginProcess() {
 </template>`;
     fs.writeFileSync(paths.userLoginDir, userLoginHtml);
 }
-
 function createRegisterModal() {
     const userRegisterHtml = `<script setup>
 import userService from '../services/userService.js';
@@ -179,6 +178,9 @@ function createUsers() {
         if (siteData.users?.register) {
             createRegisterModal();
         }
+    }
+    else {
+        fs.writeFileSync(paths.userToggleDir, '<template></template>');
     }
 }   
 

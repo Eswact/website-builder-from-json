@@ -49,7 +49,7 @@ router.afterEach((to) => {
 });
 
 router.beforeEach(async (to, from, next) => {
-  if (to.meta.requiresAuth) {
+  if (to.meta.requiresAuth && pagesData.users.active) {
     if (isLogin.value) {
       next();
     }

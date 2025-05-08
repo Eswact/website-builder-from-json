@@ -9,10 +9,10 @@ function closeModal() {
 const beforeRegister = () => {
         console.log('before register');
         return true
-      };
+    };
 const afterRegister = () => {
         console.log('after register');
-      };
+    };
 async function registerProcess() {
     if (beforeRegister()) {
         const result = await userService.register();

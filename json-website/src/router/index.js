@@ -1,8 +1,11 @@
+import { ref, computed } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import pagesData from '../../siteData.json';
 import commonFunctions from '../scripts/common';
+import userService from '../services/userService';
 import i18n from '../services/languageService';
 const modules = import.meta.glob('../views/*.vue');
+const isLogin =  computed(() => userService.authControl.value);
 const t = i18n.global.t;
 
 const routes = pagesData.pages.map((page) => {
@@ -14,6 +17,7 @@ const routes = pagesData.pages.map((page) => {
       title: page.seo.title || pagesData.general.title || pagesData.general.siteName,
       description: page.seo.description || '',
       keywords: page.seo.keywords || [],
+      requiresAuth: page.authRequired,
     }
   };
 });
@@ -43,5 +47,26 @@ router.afterEach((to) => {
     });
   }
 });
+
+router.beforeEach(async (to, from, next) => {
+  if (to.meta.requiresAuth) {
+    if (isLogin.value) {
+      next();
+    }
+    else {
+      // page reload control
+      const isValid = await userService.isLoggedIn();
+      if (isValid) {
+          next();
+      } else {
+          next({ name: 'notFound' });
+      }
+    }
+  }
+  else {
+    next();
+  }
+});
+
 
 export default router;

@@ -1,13 +1,15 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import pagesData from '../../siteData.json';
+import userService from '../services/userService.js';
 import { useHelpStore } from '../store/pageHelper';
 import DarkModeToggle from './DarkModeToggle.vue';
 import LanguageToggle from './LanguageToggle.vue';
 import UserToggle from './UserToggle.vue';
 
 const helpStore = useHelpStore();
+const isLogin = computed(() => userService.authControl.value);
 
 const route = useRoute();
 const router = useRouter();
@@ -45,6 +47,7 @@ const userEnabled = (pagesData.users.active);
         <li
           v-for="page in pagesData.pages"
           :key="page.name"
+          v-show="!userEnabled || (!page.authRequired || isLogin)"
           class="flex justify-start items-center w-full"
         >
           <router-link

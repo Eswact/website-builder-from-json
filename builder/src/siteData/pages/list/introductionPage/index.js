@@ -10,6 +10,7 @@ const introductionPage = {
       "description": "introductionPage.seo.description",
       "keywords": ["introductionPage.seo.keyword1", "introductionPage.seo.keyword2", "introductionPage.seo.keyword3"]
     },
+    "authRequired": false,
     "doms": doms,
     "scopedCss": ``,
     "customScripts": scripts.customScripts,

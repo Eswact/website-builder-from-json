@@ -12,6 +12,7 @@ const datatablesPage = {
         "description": "datatablesPage.seo.description",
         "keywords": ["datatablesPage.seo.keywords1", "datatablesPage.seo.keywords2", "datatablesPage.seo.keywords3"]
     },
+    "authRequired": true,
     "pageCss": "w-full flex flex-col justify-center items-center gap-4",
     "doms": doms,
     "scopedCss": styles,

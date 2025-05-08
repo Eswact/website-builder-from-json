@@ -10,6 +10,7 @@ const cardsPage = {
         "description": "cardsPage.seo.description",
         "keywords": ["cardsPage.seo.keywords1", "cardsPage.seo.keywords2", "cardsPage.seo.keywords3", "cardsPage.seo.keywords4"]
     },
+    "authRequired": true,
     "pageCss": "w-full flex flex-col justify-center items-center gap-8",
     "doms": doms,
     "help": {

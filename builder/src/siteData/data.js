@@ -72,6 +72,7 @@ const siteData = {
         "afterLogout": () => {
           console.log('after logout');
         },
+        "afterLogoutPage": "introduction",
     },
     "register": {
       "url": "http://localhost:3000/api/user/register",

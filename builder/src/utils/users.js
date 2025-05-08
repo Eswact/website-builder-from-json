@@ -5,6 +5,7 @@ const paths = require('./paths.js');
 
 function createUserToggle() {
     const userToggleHtml = `<script setup>
+    import { useRouter } from 'vue-router';
     import { useI18n } from 'vue-i18n';
     import { ref, watch, onMounted, computed } from 'vue';
     import { onClickOutside } from '@vueuse/core';
@@ -12,9 +13,10 @@ function createUserToggle() {
     import LoginModal from './LoginModal.vue';
     ${siteData.users?.register ? "import RegisterModal from './RegisterModal.vue';" : ''}
 
+    const router = useRouter();
     const dropdownOpen = ref(false);
     const dropdownRef = ref(null);
-    const isLogin =  computed(() => userService.authControl);
+    const isLogin = computed(() => userService.authControl.value);
     const showLoginModal = ref(false);
     ${siteData.users?.register ? 'const showRegisterModal = ref(false);' : ''}
 
@@ -29,6 +31,7 @@ function createUserToggle() {
         if (beforeLogout()) {
             await userService.logout();
             afterLogout();
+            router.push({ ${siteData.users?.logout?.afterLogoutPage ? `name: '${siteData.users.logout.afterLogoutPage}'` : `path: "/"`} });
         }
     }
 

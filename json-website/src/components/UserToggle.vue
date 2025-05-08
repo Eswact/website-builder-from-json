@@ -1,4 +1,5 @@
 <script setup>
+    import { useRouter } from 'vue-router';
     import { useI18n } from 'vue-i18n';
     import { ref, watch, onMounted, computed } from 'vue';
     import { onClickOutside } from '@vueuse/core';
@@ -6,9 +7,10 @@
     import LoginModal from './LoginModal.vue';
     import RegisterModal from './RegisterModal.vue';
 
+    const router = useRouter();
     const dropdownOpen = ref(false);
     const dropdownRef = ref(null);
-    const isLogin =  computed(() => userService.authControl);
+    const isLogin = computed(() => userService.authControl.value);
     const showLoginModal = ref(false);
     const showRegisterModal = ref(false);
 
@@ -28,6 +30,7 @@
         if (beforeLogout()) {
             await userService.logout();
             afterLogout();
+            router.push({ name: 'introduction' });
         }
     }
 

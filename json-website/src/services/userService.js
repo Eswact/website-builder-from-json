@@ -1,3 +1,4 @@
+import { ref } from 'vue';
 import $ from 'jquery';
 import { toast } from "vue3-toastify";
 import siteData from '../../siteData.json';
@@ -7,7 +8,7 @@ import i18n from './languageService';
 const t = i18n.global.t;
 
 const userService = {
-    authControl: false,
+    authControl: ref(false),
     login: async function() {
         const thisHelper = this;
         const loginData = {};
@@ -44,7 +45,7 @@ const userService = {
             console.log('Giriş başarılı:', response);
             toast.success('Giriş başarılı.');
             localStorage.userToken = response.token;
-            thisHelper.authControl = true;
+            thisHelper.authControl.value = true;
             return true;
     
         } catch (err) {
@@ -107,9 +108,9 @@ const userService = {
             });
     
             localStorage.removeItem('userToken');
+            thisHelper.authControl.value = false;
             console.log('Çıkış yapıldı:', response);
             toast.success('Çıkış yapıldı.');
-            thisHelper.authControl = false;
             return true;
     
         } catch (err) {
@@ -133,11 +134,11 @@ const userService = {
                     xhrFields: { withCredentials: true },
                 });
                 console.log(response);
-                thisHelper.authControl = true;
+                thisHelper.authControl.value = true;
                 return true;
         
             } catch (err) {
-                thisHelper.authControl = false;
+                thisHelper.authControl.value = false;
                 return false;
             }
         }

@@ -493,6 +493,7 @@
           "introductionPage.seo.keyword3"
         ]
       },
+      "authRequired": false,
       "doms": [
         {
           "type": "custom",
@@ -735,6 +736,7 @@
           "datatablesPage.seo.keywords3"
         ]
       },
+      "authRequired": true,
       "pageCss": "w-full flex flex-col justify-center items-center gap-4",
       "doms": [
         {
@@ -2061,6 +2063,7 @@
           "cardsPage.seo.keywords4"
         ]
       },
+      "authRequired": true,
       "pageCss": "w-full flex flex-col justify-center items-center gap-8",
       "doms": [
         {
@@ -2333,7 +2336,8 @@
     },
     "logout": {
       "url": "http://localhost:3000/api/user/logout",
-      "method": "POST"
+      "method": "POST",
+      "afterLogoutPage": "introduction"
     },
     "register": {
       "url": "http://localhost:3000/api/user/register",

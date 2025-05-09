@@ -4,6 +4,7 @@ const db = require("../models");
 const User = db.users;
 
 const authControl = (req, res, next) => {
+  console.log(req.session.user);
   if (req.session.user) {
     res.status(200).json({ message: "Authorized" });
   } else {

@@ -309,6 +309,9 @@ function generateCardsScript(item) {
           ${item.ajax.dataType ? `dataType: "${item.ajax.dataType}",` : ""}
           ${item.ajax.contentType ? `contentType: "${item.ajax.contentType}",` : ""}
           data: ${item.ajax.stringifyData ? "JSON.stringify(params)" : "params"},
+          xhrFields: {
+            withCredentials: true
+          },
           success: function(res) {
             console.log(res);
             ${item.name}.value = res.data;

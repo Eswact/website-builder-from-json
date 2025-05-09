@@ -36,6 +36,7 @@ const datatableService = {
     
         // table ajax
         if (ajaxReq) {
+            // ajaxReq.xhrFields = { withCredentials: true };
             defaultTableOptions.ajax = ajaxReq
             if (!defaultTableOptions.ajax.error) {
                 defaultTableOptions.ajax.error = function(xhr, error, thrown) {

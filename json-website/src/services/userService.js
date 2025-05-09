@@ -25,7 +25,7 @@ const userService = {
                 }
             }
             else {
-                registerData[item.name] = item.value;
+                loginData[item.name] = item.value;
             }
         });
     
@@ -123,20 +123,24 @@ const userService = {
     isLoggedIn: async function() {
         const thisHelper = this;        
         if (localStorage.userToken) {
-            try {
-                const response = await $.ajax({
-                    url: siteData.users.cookieSessionControlUrl,
-                    method: "POST",
-                    xhrFields: { withCredentials: true },
-                });
-                console.log(response);
-                thisHelper.authControl.value = true;
-                return true;
-        
-            } catch (err) {
-                thisHelper.authControl.value = false;
-                return false;
+            if (siteData.users.cookieSession) {
+                try {
+                    const response = await $.ajax({
+                        url: siteData.users.cookieSessionControlUrl,
+                        method: "POST",
+                        xhrFields: { withCredentials: true },
+                    });
+                    console.log(response);
+                    thisHelper.authControl.value = true;
+                    return true;
+            
+                } catch (err) {
+                    thisHelper.authControl.value = false;
+                    return false;
+                }
             }
+            //??
+            return true;
         }
         return false;
     },
@@ -167,7 +171,7 @@ const userService = {
                 } 
                 else if (item.type === "password") {
                     formHtml += `
-                        <div class="w-full flex flex-col">
+                        <div class="w-full flex flex-col relative">
                             <label for="${item.name}" class="font-semibold">${t(item.title)}</label>
                             <input 
                                 type="password" 
@@ -178,6 +182,8 @@ const userService = {
                                 ${item.placeholder ? `placeholder=${item.placeholder}`: ''}  
                                 ${item.required ? `required`: ``}
                             />
+                            <i class="passwordVisibleToggle fa-solid fa-eye text-main text-lg absolute right-4 top-1/2 cursor-pointer"></i>
+                            <i class="passwordVisibleToggle hidden fa-solid fa-eye-slash text-main text-lg absolute right-4 top-1/2 cursor-pointer"></i>
                             <span class="itemError hidden text-sm text-red-600 p-1"></span>
                         </div>`;
                 }
@@ -195,6 +201,10 @@ const userService = {
                 }
             }
             $('#loginModalContent').html(formHtml);
+            $('.passwordVisibleToggle').off('click').on('click', function() {
+                $('.passwordVisibleToggle').toggleClass('hidden');
+                $(this).siblings('input').attr('type', $(this).siblings('input').attr('type') === 'password' ? 'text' : 'password');
+            });
         });
         this.inputControls(siteData.users.login);
     },

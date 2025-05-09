@@ -29,7 +29,7 @@ app.listen(PORT, () => {
 const db = require("./app/models");
 db.mongoose
   .connect(db.url, {
-    useNewUrlParser: true,
+    // useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {

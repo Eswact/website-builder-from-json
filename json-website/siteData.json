@@ -2296,7 +2296,7 @@
     "active": true,
     "cookieSession": true,
     "cookieSessionControlUrl": "http://localhost:3000/api/user/auth-control",
-    "defaultUsers": [],
+    "defaultUser": {},
     "login": {
       "url": "http://localhost:3000/api/user/login",
       "method": "POST",

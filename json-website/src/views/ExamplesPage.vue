@@ -258,6 +258,9 @@ const shoppingCardsTotalPages = ref(1);
           dataType: "json",
           contentType: "application/json",
           data: JSON.stringify(params),
+          xhrFields: {
+            withCredentials: true
+          },
           success: function(res) {
             console.log(res);
             shoppingCards.value = res.data;
